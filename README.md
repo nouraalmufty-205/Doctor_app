@@ -1,4 +1,4 @@
-<img width="352" height="809" alt="image" src="https://github.com/user-attachments/assets/a0eb06ab-5ed3-4b7b-be8b-0313fa2fc0f2" /># Home Screen
+#Home Screen
 
 <img width="352" height="812" alt="image" src="https://github.com/user-attachments/assets/23702b12-edb2-4d3d-a80c-5528b58a2b97" />
 
