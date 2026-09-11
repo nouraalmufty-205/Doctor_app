@@ -8,6 +8,11 @@
 
 <img width="352" height="809" alt="image" src="https://github.com/user-attachments/assets/f6a11c0a-cfeb-4b91-9e70-45a9f5916e9f" />
 
+# Menu screen 
+
+<img width="1290" height="2796" alt="doctor menu screen" src="https://github.com/user-attachments/assets/ca31e910-73bd-40cf-93ec-dbb41433318d" />
+
+
 
 
 
