@@ -45,33 +45,33 @@ class MenuScreen extends StatelessWidget {
                   ],
                 ),
               ),
-                Padding(
-                  padding: const EdgeInsets.only(left: 29, bottom: 49),
-                  child: Row(
-                    children: [
-                      ImageIcon(
-                        AssetImage("assets/icons/logout.png"),
-                        color: Colors.white, //
-                      ),
-      
-                      Padding(
-                        padding: const EdgeInsets.only(left: 27),
-                        child: Text(
-                          "Logout",
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight(500),
-                            color: Colors.white,
-                          ),
+              Padding(
+                padding: const EdgeInsets.only(left: 29, bottom: 49),
+                child: Row(
+                  children: [
+                    ImageIcon(
+                      AssetImage("assets/icons/logout.png"),
+                      color: Colors.white, //
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.only(left: 27),
+                      child: Text(
+                        "Logout",
+                        style: TextStyle(
+                          fontSize: 20,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.white,
                         ),
                       ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
-              ],
-            ),
+              ),
+            ],
           ),
         ),
+      ),
     );
   }
 }

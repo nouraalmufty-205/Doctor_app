@@ -11,7 +11,7 @@ class MainButton extends StatelessWidget {
     required this.button_w,
     required this.button_h,
     required this.button_text,
-    required this.button_radius ,
+    required this.button_radius,
   });
 
   @override
@@ -24,7 +24,14 @@ class MainButton extends StatelessWidget {
         borderRadius: BorderRadius.circular(button_radius),
       ),
       child: Center(
-        child: Text(button_text,style: TextStyle(color: Color(0xffFFFFFF),fontSize:12 ,fontWeight: FontWeight(500)),),
+        child: Text(
+          button_text,
+          style: TextStyle(
+            color: Color(0xffFFFFFF),
+            fontSize: 12,
+            fontWeight: FontWeight.w500,
+          ),
+        ),
       ),
     );
   }
