@@ -38,11 +38,14 @@ class DoctorCard extends StatelessWidget {
             style: TextStyle(fontSize: 12, color: Color(0xff677294CC)),
           ),
           const SizedBox(height: 6),
-          Image.asset(
-            "assets/star.png",
-            height: 12,
-            width: 80,
-            fit: BoxFit.fitWidth,
+          Row(
+            children: List.generate(5, (index) {
+              return Icon(
+                index < 4 ? Icons.star : Icons.star_border,
+                color: Colors.amber,
+                size: 14,
+              );
+            }),
           ),
         ],
       ),

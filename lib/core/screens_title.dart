@@ -15,9 +15,10 @@ class ScreensTitle extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
+      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
-        Padding(
-          padding: const EdgeInsets.only(left: 20, top: 7),
+        GestureDetector(
+          onTap: () {},
           child: Container(
             alignment: Alignment.center,
             decoration: BoxDecoration(
@@ -31,7 +32,7 @@ class ScreensTitle extends StatelessWidget {
               padding: EdgeInsets.zero,
               constraints: BoxConstraints(),
               onPressed: onPressed,
-              icon: Icon(icon),
+              icon: Center(child: Icon(icon, size: 20)),
             ),
           ),
         ),

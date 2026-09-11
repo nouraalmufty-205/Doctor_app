@@ -4,8 +4,8 @@ import 'package:doctorapp/model/doctor_model.dart';
 import 'package:doctorapp/screens/my_doctors/widget/search_feild.dart';
 import 'package:flutter/material.dart';
 
-class SearchScreen extends StatelessWidget {
-  const SearchScreen({super.key});
+class FindDoctorsScreen extends StatelessWidget {
+  const FindDoctorsScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -52,13 +52,13 @@ class SearchScreen extends StatelessWidget {
 
 List<DoctorModel> doctors = [
   DoctorModel(
-    imageName: 'assets/mydoctor1',
+    imageName: 'assets/mydoctor1.png',
     doctorName: 'Dr. Shruti Kedia',
     doctorTitle: 'Tooths Dentist',
     doctorExperience: '7 Years experience ',
     doctorSpercentage: '87%',
     doctorNPatient: '69 Patient Stories',
-    openingHour: '10:00',
+    openingHour: '10:00 ',
     hasBooking: true,
   ),
   DoctorModel(
@@ -68,7 +68,7 @@ List<DoctorModel> doctors = [
     doctorExperience: '9 Years experience  ',
     doctorSpercentage: '74%',
     doctorNPatient: '78 Patient Stories',
-    openingHour: '12:00',
+    openingHour: '12:00 ',
     hasBooking: true,
   ),
   DoctorModel(
@@ -78,7 +78,7 @@ List<DoctorModel> doctors = [
     doctorExperience: '7 Years experience ',
     doctorSpercentage: '57%',
     doctorNPatient: '76 Patient Stories',
-    openingHour: '11:00',
+    openingHour: '11:00 ',
     hasBooking: true,
   ),
   DoctorModel(
@@ -88,7 +88,7 @@ List<DoctorModel> doctors = [
     doctorExperience: '6 Years experience ',
     doctorSpercentage: '67%',
     doctorNPatient: '86 Patient Stories',
-    openingHour: '11:00',
+    openingHour: '11:00 ',
     hasBooking: true,
   ),
 ];

@@ -1,3 +1,5 @@
+import 'package:doctorapp/screens/doctorselecttime1.dart';
+import 'package:doctorapp/screens/finddoctorscreen.dart';
 import 'package:doctorapp/screens/menu_screen/menu_screen.dart';
 import 'package:doctorapp/screens/livescreen.dart';
 import 'package:doctorapp/screens/my_doctors/my_doctors_screen.dart';
@@ -14,12 +16,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-
-    return MaterialApp(debugShowCheckedModeBanner: false, 
-    home: MyDoctorsScreen());
-
-  
-    
-
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: BottomNavBarScreen(),
+    );
   }
 }
