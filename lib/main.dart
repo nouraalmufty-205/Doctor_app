@@ -1,4 +1,6 @@
 import 'package:doctorapp/screens/menu_screen/menu_screen.dart';
+import 'package:doctorapp/screens/livescreen.dart';
+import 'package:doctorapp/widgets/navbar.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -13,7 +15,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MenuScreen(),
+      home: MenuScreen(), 
     );
   }
 }
