@@ -16,6 +16,11 @@
 
 <img width="1170" height="2532" alt="mydoctorscreen" src="https://github.com/user-attachments/assets/5c61203c-a8ad-45e0-816a-5b28d3a2437f" />
 
+#Find Doctors Screen
+
+<img width="351" height="812" alt="image" src="https://github.com/user-attachments/assets/7955d40b-4292-44aa-abda-8cf3087cb4ce" />
+
+
 
 
 
