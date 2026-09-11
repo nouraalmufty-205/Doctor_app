@@ -12,6 +12,11 @@
 
 <img width="548" height="922" alt="image" src="https://github.com/user-attachments/assets/44a4e62a-8ddf-4dd3-9441-82636fd5640e" />
 
+# My Doctors Screen 
+
+<img width="1170" height="2532" alt="mydoctorscreen" src="https://github.com/user-attachments/assets/5c61203c-a8ad-45e0-816a-5b28d3a2437f" />
+
+
 
 
 
