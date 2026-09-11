@@ -10,7 +10,8 @@
 
 # Menu screen 
 
-<img width="1290" height="2796" alt="doctor menu screen" src="https://github.com/user-attachments/assets/ca31e910-73bd-40cf-93ec-dbb41433318d" />
+<img width="548" height="922" alt="image" src="https://github.com/user-attachments/assets/44a4e62a-8ddf-4dd3-9441-82636fd5640e" />
+
 
 
 
