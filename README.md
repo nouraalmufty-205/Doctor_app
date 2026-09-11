@@ -1,8 +1,9 @@
 #Home Screen
 
-<img width="351" height="811" alt="image" src="https://github.com/user-attachments/assets/6b2062dc-7562-4a09-9601-b7fb7c9bdd26" />
+<img width="356" height="813" alt="image" src="https://github.com/user-attachments/assets/18647ed8-0b04-4a64-8550-974ce5c3af52" />
 
-<img width="354" height="813" alt="image" src="https://github.com/user-attachments/assets/d0249ded-a371-4798-ac97-282f72e5851e" />
+<img width="354" height="781" alt="image" src="https://github.com/user-attachments/assets/44248ca6-20f4-4ac7-8ad9-62dd6430b89a" />
+
 
 #Live Screen
 
@@ -19,6 +20,12 @@
 #Find Doctors Screen
 
 <img width="351" height="812" alt="image" src="https://github.com/user-attachments/assets/7955d40b-4292-44aa-abda-8cf3087cb4ce" />
+
+#Doctor Screen Time 1
+
+<img width="355" height="811" alt="image" src="https://github.com/user-attachments/assets/7fc15176-97f3-4289-a6ff-8b76e3bc4c9b" />
+
+
 
 
 
