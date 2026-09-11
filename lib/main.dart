@@ -1,3 +1,4 @@
+import 'package:doctorapp/screens/menu_screen/menu_screen.dart';
 import 'package:doctorapp/screens/livescreen.dart';
 import 'package:doctorapp/widgets/navbar.dart';
 import 'package:flutter/material.dart';
@@ -12,6 +13,9 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(debugShowCheckedModeBanner: false, home: LiveScreen());
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      home: MenuScreen(), 
+    );
   }
 }
