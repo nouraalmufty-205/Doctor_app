@@ -1,14 +1,12 @@
 import 'package:doctorapp/core/main_button.dart';
+import 'package:doctorapp/screens/medical_record_screen/medical_record_screen.dart';
 import 'package:doctorapp/model/doctor_model.dart';
 import 'package:flutter/material.dart';
 
 class DoctorCardMain extends StatefulWidget {
-  final DoctorModel doctorModel ;
+  final DoctorModel doctorModel;
 
-  const DoctorCardMain({
-    super.key, required this.doctorModel,
-
-  });
+  const DoctorCardMain({super.key, required this.doctorModel});
 
   @override
   State<DoctorCardMain> createState() => _DoctorCardMainState();
@@ -16,7 +14,6 @@ class DoctorCardMain extends StatefulWidget {
 
 class _DoctorCardMainState extends State<DoctorCardMain> {
   late bool colored;
-
 
   @override
   void initState() {
@@ -113,7 +110,9 @@ class _DoctorCardMainState extends State<DoctorCardMain> {
                                           ),
                                           const SizedBox(width: 8),
                                           Text(
-                                            widget.doctorModel.doctorSpercentage,
+                                            widget
+                                                .doctorModel
+                                                .doctorSpercentage,
                                             style: const TextStyle(
                                               fontSize: 11,
                                               fontWeight: FontWeight.w300,
@@ -204,7 +203,9 @@ class _DoctorCardMainState extends State<DoctorCardMain> {
                                 ),
                                 children: <TextSpan>[
                                   TextSpan(
-                                    text: widget.doctorModel.openingHour ?? '9:00',
+                                    text:
+                                        widget.doctorModel.openingHour ??
+                                        '9:00',
                                   ),
                                   const TextSpan(
                                     text: 'AM tomorrow',
@@ -219,6 +220,16 @@ class _DoctorCardMainState extends State<DoctorCardMain> {
                         ),
                       ),
                       MainButton(
+                        onPrease: () => {
+                          setState(() {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => const MedicalRecordScreen(),
+                              ),
+                            );
+                          }),
+                        },
                         button_w: 112,
                         button_h: 34,
                         button_text: 'Book Now',
@@ -231,7 +242,7 @@ class _DoctorCardMainState extends State<DoctorCardMain> {
             ),
           ),
         ),
-        SizedBox(height: 10,)
+        SizedBox(height: 10),
       ],
     );
   }
