@@ -25,6 +25,11 @@
 
 <img width="355" height="811" alt="image" src="https://github.com/user-attachments/assets/7fc15176-97f3-4289-a6ff-8b76e3bc4c9b" />
 
+#Doctor Screen Time 2
+
+<img width="357" height="813" alt="image" src="https://github.com/user-attachments/assets/9fdd7a6b-4e7e-4b2a-a5f2-015e5b8d5881" />
+
+
 
 
 
