@@ -1,5 +1,6 @@
 import 'package:doctorapp/core/doctor_card.dart';
 import 'package:doctorapp/screens/doctorselecttime1.dart';
+import 'package:doctorapp/screens/doctorselecttime2.dart';
 import 'package:doctorapp/screens/finddoctorscreen.dart';
 import 'package:doctorapp/screens/menu_screen/menu_screen.dart';
 import 'package:doctorapp/screens/livescreen.dart';
