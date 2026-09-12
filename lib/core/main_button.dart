@@ -18,7 +18,7 @@ class MainButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onPrease,
+      onTap: onPrease ,
       child: Container(
         width: button_w,
         height: button_h,
