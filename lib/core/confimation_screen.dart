@@ -1,5 +1,6 @@
 import 'package:doctorapp/core/main_button.dart';
 import 'package:doctorapp/core/screens_title.dart';
+import 'package:doctorapp/screens/add_record_screen/add_record_screen.dart';
 import 'package:flutter/material.dart';
 
 class ConfimationScreen extends StatelessWidget {
@@ -12,12 +13,20 @@ class ConfimationScreen extends StatelessWidget {
   final double button_h;
   final String button_text;
   final double button_radius;
+  final Widget route;
 
   const ConfimationScreen({
     super.key,
     required this.screensTitleText,
     required this.screenTitleNavigator,
-    required this.mainImage, required this.firstText, required this.secandText, required this.button_w, required this.button_h, required this.button_text, required this.button_radius,
+    required this.mainImage,
+    required this.firstText,
+    required this.secandText,
+    required this.button_w,
+    required this.button_h,
+    required this.button_text,
+    required this.button_radius,
+    required this.route,
   });
 
   @override
@@ -65,7 +74,16 @@ class ConfimationScreen extends StatelessWidget {
                       SizedBox(height: 13,),
                       Text(secandText ,textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight(400),color: Color(0xff677294)),),
                       SizedBox(height: 48,),
-                      MainButton(button_w: button_w, button_h: button_h, button_text: button_text, button_radius: button_radius,),
+                      MainButton(
+                        button_w: button_w,
+                        button_h: button_h,
+                        button_text: button_text,
+                        button_radius: button_radius,
+                        onPrease: () => Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (_) => route),
+                        ),
+                      ),
                   ],
                 ),
               ),
