@@ -33,6 +33,11 @@
 
 <img width="357" height="813" alt="image" src="https://github.com/user-attachments/assets/9fdd7a6b-4e7e-4b2a-a5f2-015e5b8d5881" />
 
+#Popular Doctor Screen
+
+<img width="353" height="812" alt="image" src="https://github.com/user-attachments/assets/e7e94bca-00ab-4115-9ede-169657a91fed" />
+
+
 
 
 
