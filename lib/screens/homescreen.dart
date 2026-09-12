@@ -7,6 +7,7 @@ import 'package:doctorapp/widgets/homeappbar.dart';
 import 'package:doctorapp/widgets/livedoctors.dart';
 import 'package:doctorapp/widgets/populardoctors.dart';
 import 'package:flutter/material.dart';
+import 'package:doctorapp/model/popular_doctors_data.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -86,7 +87,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ],
               ),
               SizedBox(height: 10),
-              PopularDoctors(),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 20),
+                child: PopularDoctors(doctors: homePopularDoctors),
+              ),
               const SizedBox(height: 20),
               FeatureDoctor(),
             ],

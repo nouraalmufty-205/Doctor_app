@@ -23,7 +23,21 @@ class DoctorCard extends StatelessWidget {
       ),
       child: Column(
         children: [
-          Image.asset(image, fit: BoxFit.cover),
+          ClipRRect(
+            borderRadius: const BorderRadius.only(
+              topLeft: Radius.circular(12),
+              topRight: Radius.circular(12),
+            ),
+            child: SizedBox(
+              width: double.infinity, // fills the card's 190 width
+              height: 170,
+              child: Image.asset(
+                image,
+                fit: BoxFit.cover,
+                alignment: Alignment.topCenter,
+              ),
+            ),
+          ),
           SizedBox(height: 14),
           Text(
             name,
@@ -39,6 +53,7 @@ class DoctorCard extends StatelessWidget {
           ),
           const SizedBox(height: 6),
           Row(
+            mainAxisAlignment: MainAxisAlignment.center,
             children: List.generate(5, (index) {
               return Icon(
                 index < 4 ? Icons.star : Icons.star_border,
