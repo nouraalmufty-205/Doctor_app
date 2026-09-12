@@ -15,7 +15,11 @@
 
 # My Doctors Screen 
 
-<img width="1170" height="2532" alt="mydoctorscreen" src="https://github.com/user-attachments/assets/5c61203c-a8ad-45e0-816a-5b28d3a2437f" />
+<img width="1170" height="2532" alt="my doctors" src="https://github.com/user-attachments/assets/96469cd9-19df-4a30-9790-fa472f1d2599" />
+
+# Medical Records
+
+<img width="1170" height="2532" alt="Medical record screen" src="https://github.com/user-attachments/assets/2a258cd6-5133-4196-b31e-d287a3500155" />
 
 #Find Doctors Screen
 
