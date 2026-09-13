@@ -1,3 +1,4 @@
+import 'package:doctorapp/core/back_ground_screen.dart';
 import 'package:doctorapp/core/main_button.dart';
 import 'package:doctorapp/core/screens_title.dart';
 import 'package:doctorapp/screens/add_record_screen/add_record_screen.dart';
@@ -33,47 +34,56 @@ class ConfimationScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Container(
-          width: double.infinity,
-          height: double.infinity,
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/My_doctors_screen.png"),
-              fit: BoxFit.cover,
-            ),
-          ),
-          child: Column(
-            children: [
-              Row(
-                children: [
-                  ScreensTitle(
-                    icon: Icons.arrow_back_ios_new_outlined,
-                    text: screensTitleText,
-                    onPressed: () {
-                      Navigator.push(
-                        context,
-                        MaterialPageRoute(
-                          builder: (context) => screenTitleNavigator,
-                        ),
-                      );
-                    },
-                  ),
-                ],
-              ),
-              Expanded(
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
+        child: Stack(
+          children: [
+            const BackGroundScreen(),
+            Column(
+              children: [
+                Row(
                   children: [
-                    Center(
-                      child: CircleAvatar( 
-                        radius: 107,
-                        backgroundImage: AssetImage(mainImage)),
+                    ScreensTitle(
+                      icon: Icons.arrow_back_ios_new_outlined,
+                      text: screensTitleText,
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => screenTitleNavigator,
+                          ),
+                        );
+                      },
                     ),
-                      SizedBox(height: 51,),
-                      Text(firstText, style: TextStyle(fontSize: 22 ,fontWeight: FontWeight(700),color: Color(0xff222222)),),
-                      SizedBox(height: 13,),
-                      Text(secandText ,textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight(400),color: Color(0xff677294)),),
-                      SizedBox(height: 48,),
+                  ],
+                ),
+                Expanded(
+                  child: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: [
+                      Center(
+                        child: CircleAvatar(
+                          radius: 107,
+                          backgroundImage: AssetImage(mainImage),
+                        ),
+                      ),
+                      const SizedBox(height: 51),
+                      Text(
+                        firstText,
+                        style: const TextStyle(
+                          fontSize: 22,
+                          fontWeight: FontWeight.w700,
+                          color: Color(0xff222222),
+                        ),
+                      ),
+                      const SizedBox(height: 13),
+                      Text(
+                        secandText,
+                        textAlign: TextAlign.center,
+                        style: const TextStyle(
+                          fontWeight: FontWeight.w400,
+                          color: Color(0xff677294),
+                        ),
+                      ),
+                      const SizedBox(height: 48),
                       MainButton(
                         button_w: button_w,
                         button_h: button_h,
@@ -84,13 +94,15 @@ class ConfimationScreen extends StatelessWidget {
                           MaterialPageRoute(builder: (_) => route),
                         ),
                       ),
-                  ],
+                    ],
+                  ),
                 ),
-              ),
-            ],
-          ),
+              ],
+            ),
+          ],
         ),
       ),
     );
   }
 }
+

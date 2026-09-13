@@ -29,6 +29,26 @@
 
 <img width="1170" height="2532" alt="upload record" src="https://github.com/user-attachments/assets/ee6348f8-169d-4bb0-9215-73df377d9362" />
 
+# All Record
+
+<img width="1170" height="2532" alt="all records" src="https://github.com/user-attachments/assets/22f7b664-1ada-4acc-aeab-b90af458c49a" />
+
+# Medicine order 
+
+<img width="1170" height="2532" alt="medicine orders" src="https://github.com/user-attachments/assets/6a2b7c91-26b9-43e0-a3f9-759a9238376a" />
+
+# Enable Location Service
+
+<img width="1170" height="2532" alt="location service" src="https://github.com/user-attachments/assets/3f3eccc5-a0dc-42e6-96b9-471573c6cd4c" />
+
+# Main Medicine order 
+
+<img width="1170" height="2532" alt="main medicine order" src="https://github.com/user-attachments/assets/7075b639-f931-4534-965a-cfead4b8a65a" />
+
+# Help Center 
+
+<img width="1170" height="2532" alt="help center" src="https://github.com/user-attachments/assets/604e1672-5211-45db-a9b5-6c314c89602c" />
+
 #Find Doctors Screen
 
 <img width="351" height="812" alt="image" src="https://github.com/user-attachments/assets/7955d40b-4292-44aa-abda-8cf3087cb4ce" />
