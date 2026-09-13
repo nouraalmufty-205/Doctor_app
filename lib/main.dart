@@ -3,6 +3,7 @@ import 'package:doctorapp/screens/doctorselecttime1.dart';
 import 'package:doctorapp/screens/doctorselecttime2.dart';
 import 'package:doctorapp/screens/finddoctorscreen.dart';
 import 'package:doctorapp/screens/homescreen.dart';
+import 'package:doctorapp/screens/location_service_screen.dart/location_service.dart';
 import 'package:doctorapp/screens/menu_screen/menu_screen.dart';
 import 'package:doctorapp/screens/livescreen.dart';
 import 'package:doctorapp/screens/my_doctors/my_doctors_screen.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyDoctorsScreen(),
+      home: LocationService(),
     );
   }
 }
