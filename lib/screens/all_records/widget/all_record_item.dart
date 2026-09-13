@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class AllRecordItem extends StatelessWidget {
   const AllRecordItem({
@@ -90,7 +91,7 @@ class AllRecordItem extends StatelessWidget {
         Positioned(
           top: 10,
           right: 10,
-          child: Image.asset("assets/icons/three_dots.png"),
+          child: SvgPicture.asset("assets/icons/threedots.svg" ,width: 4,height: 20,) ,
         ),
       ],
     );
