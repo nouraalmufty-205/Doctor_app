@@ -21,7 +21,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: Doctorselecttime2(),
+      home: MyDoctorsScreen(),
     );
   }
 }
