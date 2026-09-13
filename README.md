@@ -65,6 +65,11 @@
 
 <img width="353" height="812" alt="image" src="https://github.com/user-attachments/assets/e7e94bca-00ab-4115-9ede-169657a91fed" />
 
+#Doctor Details Screen
+
+<img width="350" height="813" alt="image" src="https://github.com/user-attachments/assets/5cc8ecb0-129c-4f5a-9798-d40588a91b2f" />
+
+
 
 
 
