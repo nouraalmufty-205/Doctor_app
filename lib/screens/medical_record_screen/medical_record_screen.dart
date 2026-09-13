@@ -13,13 +13,13 @@ class MedicalRecordScreen extends StatelessWidget {
       screenTitleNavigator: MyDoctorsScreen(),
       mainImage: 'assets/medcalrecordsImage.png',
       firstText: 'Add a medical record.',
-      secandText: 'A detailed health history helps a doctor diagnose \nyou btter.',
+      secandText:
+          'A detailed health history helps a doctor diagnose \nyou btter.',
       button_w: 270,
       button_h: 54,
       button_text: 'Add a record',
       button_radius: 6,
       route: AddRecordScreen(),
-
     );
   }
 }

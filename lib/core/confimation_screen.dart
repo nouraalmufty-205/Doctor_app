@@ -74,7 +74,7 @@ class ConfimationScreen extends StatelessWidget {
                       firstText,
                       style: TextStyle(
                         fontSize: 22,
-                        fontWeight: FontWeight(700),
+                        fontWeight: FontWeight.w700,
                         color: Color(0xff222222),
                       ),
                     ),
@@ -83,7 +83,7 @@ class ConfimationScreen extends StatelessWidget {
                       secandText,
                       textAlign: TextAlign.center,
                       style: TextStyle(
-                        fontWeight: FontWeight(400),
+                        fontWeight: FontWeight.w400,
                         color: Color(0xff677294),
                       ),
                     ),
