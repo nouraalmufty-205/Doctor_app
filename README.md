@@ -29,6 +29,11 @@
 
 <img width="1170" height="2532" alt="upload record" src="https://github.com/user-attachments/assets/ee6348f8-169d-4bb0-9215-73df377d9362" />
 
+# All Record
+
+<img width="1170" height="2532" alt="all records" src="https://github.com/user-attachments/assets/22f7b664-1ada-4acc-aeab-b90af458c49a" />
+
+
 #Find Doctors Screen
 
 <img width="351" height="812" alt="image" src="https://github.com/user-attachments/assets/7955d40b-4292-44aa-abda-8cf3087cb4ce" />
