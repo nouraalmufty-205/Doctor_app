@@ -4,6 +4,7 @@ import 'package:doctorapp/screens/all_records/all_records.dart';
 import 'package:doctorapp/screens/doctorselecttime1.dart';
 import 'package:doctorapp/screens/doctorselecttime2.dart';
 import 'package:doctorapp/screens/finddoctorscreen.dart';
+import 'package:doctorapp/screens/help_center/help_center_screen.dart';
 import 'package:doctorapp/screens/homescreen.dart';
 
 import 'package:doctorapp/screens/main_medicine_screen/main_medicine_order.dart';
@@ -36,10 +37,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
 
+      home: HelpCenterScreen(),
+
+
       home: MainMedicineOrder(),
 
 
       home: MedicineOrderScreen(),
+
 
 
 
