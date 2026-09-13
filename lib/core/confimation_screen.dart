@@ -26,7 +26,6 @@ class ConfimationScreen extends StatelessWidget {
     required this.button_h,
     required this.button_text,
     required this.button_radius,
-    required this.route,
   });
 
   @override
@@ -65,25 +64,36 @@ class ConfimationScreen extends StatelessWidget {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Center(
-                      child: CircleAvatar( 
+                      child: CircleAvatar(
                         radius: 107,
-                        backgroundImage: AssetImage(mainImage)),
-                    ),
-                      SizedBox(height: 51,),
-                      Text(firstText, style: TextStyle(fontSize: 22 ,fontWeight: FontWeight(700),color: Color(0xff222222)),),
-                      SizedBox(height: 13,),
-                      Text(secandText ,textAlign: TextAlign.center,style: TextStyle(fontWeight: FontWeight(400),color: Color(0xff677294)),),
-                      SizedBox(height: 48,),
-                      MainButton(
-                        button_w: button_w,
-                        button_h: button_h,
-                        button_text: button_text,
-                        button_radius: button_radius,
-                        onPrease: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(builder: (_) => route),
-                        ),
+                        backgroundImage: AssetImage(mainImage),
                       ),
+                    ),
+                    SizedBox(height: 51),
+                    Text(
+                      firstText,
+                      style: TextStyle(
+                        fontSize: 22,
+                        fontWeight: FontWeight(700),
+                        color: Color(0xff222222),
+                      ),
+                    ),
+                    SizedBox(height: 13),
+                    Text(
+                      secandText,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                        fontWeight: FontWeight(400),
+                        color: Color(0xff677294),
+                      ),
+                    ),
+                    SizedBox(height: 48),
+                    MainButton(
+                      button_w: button_w,
+                      button_h: button_h,
+                      button_text: button_text,
+                      button_radius: button_radius,
+                    ),
                   ],
                 ),
               ),

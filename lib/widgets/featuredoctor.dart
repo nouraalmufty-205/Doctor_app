@@ -78,9 +78,22 @@ final List<Map<String, dynamic>> featureDoctors = [
     "price": 25.00,
   },
   {
+    "name": "Dr. Strain",
+    "image": "assets/mydoctor6.png",
+    "rating": 3.0,
+    "price": 22.00,
+  },
+
+  {
     "name": "Dr. Fillerup",
     "image": "assets/circledoctor2.png",
     "rating": 4.2,
+    "price": 30.00,
+  },
+  {
+    "name": "Dr. Lachinet",
+    "image": "assets/mydoctor3.png",
+    "rating": 4.0,
     "price": 30.00,
   },
 ];

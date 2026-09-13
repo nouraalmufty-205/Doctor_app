@@ -1,3 +1,4 @@
+import 'package:doctorapp/core/favourite_icon.dart';
 import 'package:doctorapp/core/screens_title.dart';
 import 'package:flutter/material.dart';
 
@@ -114,21 +115,7 @@ class _MyWidgetState extends State<DoctorInfoCard> {
                   ),
                 ],
               ),
-              Positioned(
-                right: 0,
-                top: 0,
-                child: InkWell(
-                  onTap: () {
-                    setState(() {
-                      _isLiked = !_isLiked;
-                    });
-                  },
-                  child: Icon(
-                    _isLiked ? Icons.favorite : Icons.favorite_border_outlined,
-                    color: _isLiked ? Colors.red : const Color(0xff67729480),
-                  ),
-                ),
-              ),
+              FavouriteIcon(),
             ],
           ),
         ),

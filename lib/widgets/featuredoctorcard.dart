@@ -24,7 +24,7 @@ class _FeatureDoctorCardState extends State<FeatureDoctorCard> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 220,
+      height: 240,
       width: 180,
       margin: const EdgeInsets.symmetric(horizontal: 6),
       decoration: BoxDecoration(

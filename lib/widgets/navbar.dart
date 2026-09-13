@@ -1,4 +1,4 @@
-import 'package:doctorapp/screens/favoritescreen.dart';
+import 'package:doctorapp/screens/favouritescreen.dart';
 
 import 'package:doctorapp/screens/homescreen.dart';
 import 'package:doctorapp/screens/messagescreen.dart';
@@ -17,7 +17,7 @@ class _BottomNavBarScreenState extends State<BottomNavBarScreen> {
 
   final List<Widget> screens = const [
     HomeScreen(),
-    FavoriteScreen(),
+    FavouriteScreen(),
     ReadScreen(),
     MessageScreen(),
   ];
