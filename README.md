@@ -33,6 +33,10 @@
 
 <img width="1170" height="2532" alt="all records" src="https://github.com/user-attachments/assets/22f7b664-1ada-4acc-aeab-b90af458c49a" />
 
+# Medicine order 
+
+<img width="1170" height="2532" alt="medicine orders" src="https://github.com/user-attachments/assets/6a2b7c91-26b9-43e0-a3f9-759a9238376a" />
+
 
 #Find Doctors Screen
 
