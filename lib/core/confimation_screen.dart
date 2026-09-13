@@ -13,7 +13,7 @@ class ConfimationScreen extends StatelessWidget {
   final double button_h;
   final String button_text;
   final double button_radius;
-  final Widget route;
+  final Widget? route;
 
   const ConfimationScreen({
     super.key,
@@ -26,6 +26,7 @@ class ConfimationScreen extends StatelessWidget {
     required this.button_h,
     required this.button_text,
     required this.button_radius,
+    this.route,
   });
 
   @override

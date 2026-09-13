@@ -1,4 +1,5 @@
 import 'package:doctorapp/core/doctor_card.dart';
+import 'package:doctorapp/screens/doctor_details.dart';
 import 'package:doctorapp/screens/doctorselecttime1.dart';
 import 'package:doctorapp/screens/doctorselecttime2.dart';
 import 'package:doctorapp/screens/finddoctorscreen.dart';
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: BottomNavBarScreen(),
+      home: DoctorDetails(),
     );
   }
 }
