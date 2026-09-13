@@ -1,3 +1,4 @@
+import 'package:doctorapp/core/back_ground_screen.dart';
 import 'package:doctorapp/core/doctor_card.dart';
 import 'package:doctorapp/core/screens_title.dart';
 import 'package:doctorapp/model/doctor_model.dart';
@@ -11,35 +12,36 @@ class MyDoctorsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: Container(
-          decoration: const BoxDecoration(
-            image: DecorationImage(
-              image: AssetImage("assets/My_doctors_screen.png"),
-              fit: BoxFit.cover,
-            ),
-          ),
-          child: Column(
-            children: [
-              ScreensTitle(
-                icon: Icons.arrow_back_ios_outlined,
-                text: "My Doctors",
-              ),
-              const SizedBox(height: 34),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: const SearchFeild(Text_feild: 'search',lIcon:Icons.search , ricon: Icons.close,),
-              ),
-              const SizedBox(height: 24),
-              Expanded(
-                child: ListView.builder(
-                  itemCount: doctors.length,
-                  itemBuilder: (context, index) {
-                    return DoctorCardMain(doctorModel: doctors[index]);
-                  },
+        child: Stack(
+          children: [
+            BackGroundScreen(),
+            Column(
+              children: [
+                ScreensTitle(
+                  icon: Icons.arrow_back_ios_outlined,
+                  text: "My Doctors",
                 ),
-              ),
-            ],
-          ),
+                const SizedBox(height: 34),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: const SearchFeild(
+                    Text_feild: 'search',
+                    lIcon: Icons.search,
+                    ricon: Icons.close,
+                  ),
+                ),
+                const SizedBox(height: 24),
+                Expanded(
+                  child: ListView.builder(
+                    itemCount: doctors.length,
+                    itemBuilder: (context, index) {
+                      return DoctorCardMain(doctorModel: doctors[index]);
+                    },
+                  ),
+                ),
+              ],
+            ),
+          ],
         ),
       ),
     );
