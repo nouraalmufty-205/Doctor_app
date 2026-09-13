@@ -1,6 +1,7 @@
 import 'package:doctorapp/core/main_button.dart';
 import 'package:doctorapp/core/screens_title.dart';
 import 'package:doctorapp/screens/add_record_screen/widget/add_more_images.dart';
+import 'package:doctorapp/screens/all_records/all_records.dart';
 import 'package:doctorapp/screens/medical_record_screen/medical_record_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -44,8 +45,8 @@ class AddRecordScreen extends StatelessWidget {
                   AddMoreImages(hasImage: false),
                 ],
               ),
-              Spacer(),
-              Container(
+              Expanded(
+                child: Container(
                 width: double.infinity,
                 decoration: BoxDecoration(
                   color: Colors.white,
@@ -62,11 +63,12 @@ class AddRecordScreen extends StatelessWidget {
                   ],
                 ),
                 
-                child: Padding(
-                  padding: const EdgeInsets.only(top: 31, left: 19),
+                child: SingleChildScrollView(
                   child: Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Column(
+                    padding: const EdgeInsets.only(top: 31, left: 19),
+                    child: Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
                         const Text(
@@ -191,6 +193,14 @@ class AddRecordScreen extends StatelessWidget {
                         SizedBox(height: 35),
                         Center(
                           child: MainButton(
+                            onPrease: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (_) => const AllRecords(),
+                                ),
+                              );
+                            },
                             button_w: 270,
                             button_h: 54,
                             button_text: 'Upload record',
@@ -201,6 +211,8 @@ class AddRecordScreen extends StatelessWidget {
                       ],
                     ),
                   ),
+                ),
+                ),
                 ),
               ),
             ],
