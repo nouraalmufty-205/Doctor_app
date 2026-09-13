@@ -37,6 +37,10 @@
 
 <img width="1170" height="2532" alt="medicine orders" src="https://github.com/user-attachments/assets/6a2b7c91-26b9-43e0-a3f9-759a9238376a" />
 
+# Enable Location Service
+
+<img width="1170" height="2532" alt="location service" src="https://github.com/user-attachments/assets/3f3eccc5-a0dc-42e6-96b9-471573c6cd4c" />
+
 
 #Find Doctors Screen
 
