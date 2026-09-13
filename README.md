@@ -45,6 +45,9 @@
 
 <img width="1170" height="2532" alt="main medicine order" src="https://github.com/user-attachments/assets/7075b639-f931-4534-965a-cfead4b8a65a" />
 
+# Help Center 
+
+<img width="1170" height="2532" alt="help center" src="https://github.com/user-attachments/assets/604e1672-5211-45db-a9b5-6c314c89602c" />
 
 #Find Doctors Screen
 
