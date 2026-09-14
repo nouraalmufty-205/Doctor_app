@@ -1,8 +1,5 @@
-import 'package:carousel_slider/carousel_slider.dart';
 import 'package:doctorapp/widgets/categories.dart';
-import 'package:doctorapp/widgets/doctorcard.dart';
 import 'package:doctorapp/widgets/featuredoctor.dart';
-import 'package:doctorapp/widgets/featuredoctorcard.dart';
 import 'package:doctorapp/widgets/homeappbar.dart';
 import 'package:doctorapp/widgets/livedoctors.dart';
 import 'package:doctorapp/widgets/populardoctors.dart';

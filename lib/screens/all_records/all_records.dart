@@ -1,7 +1,6 @@
 import 'package:doctorapp/core/back_ground_screen.dart';
 import 'package:doctorapp/core/main_button.dart';
 import 'package:doctorapp/core/screens_title.dart';
-import 'package:doctorapp/screens/add_record_screen/add_record_screen.dart';
 import 'package:doctorapp/screens/all_records/widget/all_record_item.dart';
 import 'package:doctorapp/screens/medicine_order.dart/medicine_order_screen.dart';
 import 'package:flutter/material.dart';
@@ -21,12 +20,7 @@ class AllRecords extends StatelessWidget {
                 ScreensTitle(
                   icon: Icons.arrow_back_ios_new_outlined,
                   text: "All Records",
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (_) => AddRecordScreen()),
-                    );
-                  },
+                
                 ),
                 SizedBox(height: 38),
                 AllRecordItem(
@@ -63,10 +57,10 @@ class AllRecords extends StatelessWidget {
                         MaterialPageRoute(builder: (_) => MedicineOrderScreen()),
                       );
                     },
-                    button_w: 270,
-                    button_h: 54,
-                    button_text: "Add a record",
-                    button_radius: 6,
+                    buttonw: 270,
+                    buttonh: 54,
+                    buttontext: "Add a record",
+                    buttonradius: 6,
                   ),
                 ),
               ],

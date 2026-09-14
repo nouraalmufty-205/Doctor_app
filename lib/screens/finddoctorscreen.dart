@@ -28,7 +28,7 @@ class FindDoctorsScreen extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: const SearchFeild(
-                  Text_feild: 'Dentist',
+                  textfeild: 'Dentist',
                   lIcon: Icons.search,
                   ricon: Icons.close,
                 ),

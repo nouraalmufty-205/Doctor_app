@@ -2,7 +2,6 @@ import 'package:carousel_slider/carousel_slider.dart';
 import 'package:doctorapp/core/doctor_info_card.dart';
 import 'package:doctorapp/core/greenbotton.dart';
 import 'package:doctorapp/core/screens_title.dart';
-import 'package:doctorapp/model/doctor_model.dart';
 import 'package:doctorapp/widgets/appointmentslotcard.dart';
 import 'package:flutter/material.dart';
 

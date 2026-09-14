@@ -1,4 +1,3 @@
-import 'package:doctorapp/core/favourite_icon.dart';
 import 'package:doctorapp/core/screens_title.dart';
 import 'package:doctorapp/screens/doctor_appointment_screen.dart';
 import 'package:doctorapp/widgets/doctor_details_card.dart';

@@ -1,13 +1,11 @@
 import 'package:flutter/material.dart';
 
 class ScreensTitle extends StatelessWidget {
-  final VoidCallback? onPressed;
   final IconData icon;
   final String text;
 
   const ScreensTitle({
     super.key,
-    this.onPressed,
     required this.icon,
     required this.text,
   });
@@ -20,7 +18,6 @@ class ScreensTitle extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           GestureDetector(
-            onTap: onPressed,
             child: Container(
               alignment: Alignment.center,
               decoration: BoxDecoration(
@@ -33,7 +30,9 @@ class ScreensTitle extends StatelessWidget {
               child: IconButton(
                 padding: EdgeInsets.zero,
                 constraints: BoxConstraints(),
-                onPressed: onPressed,
+                onPressed: (){
+                  Navigator.pop(context); 
+                },
                 icon: Center(child: Icon(icon, size: 20)),
               ),
             ),

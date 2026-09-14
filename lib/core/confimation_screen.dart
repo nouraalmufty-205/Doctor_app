@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 
 class ConfimationScreen extends StatelessWidget {
   final String screensTitleText;
-  final Widget screenTitleNavigator;
   final String mainImage;
   final String firstText;
   final String secandText;
@@ -18,7 +17,6 @@ class ConfimationScreen extends StatelessWidget {
   const ConfimationScreen({
     super.key,
     required this.screensTitleText,
-    required this.screenTitleNavigator,
     required this.mainImage,
     required this.firstText,
     required this.secandText,
@@ -43,14 +41,6 @@ class ConfimationScreen extends StatelessWidget {
                     ScreensTitle(
                       icon: Icons.arrow_back_ios_new_outlined,
                       text: screensTitleText,
-                      onPressed: () {
-                        Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => screenTitleNavigator,
-                          ),
-                        );
-                      },
                     ),
                   ],
                 ),
@@ -84,10 +74,10 @@ class ConfimationScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 48),
                       MainButton(
-                        button_w: buttonw,
-                        button_h: buttonh,
-                        button_text: buttontext,
-                        button_radius: buttonradius,
+                        buttonw: buttonw,
+                        buttonh: buttonh,
+                        buttontext: buttontext,
+                        buttonradius: buttonradius,
                         onPrease: () => Navigator.push(
                           context,
                           MaterialPageRoute(builder: (_) => route),

@@ -40,6 +40,7 @@ dependencies:
   flutter_native_splash: ^2.4.7
 
   flutter_svg: ^2.3.0
+  blobs: ^2.0.0
 
 dev_dependencies:
   flutter_test:
@@ -95,7 +96,7 @@ flutter:
 
 flutter_native_splash:
   color: "#FFFFFF"
-  background_image: "assets/background.png"
+  background_image: "assets/My_doctors_screen.png"
   image: "assets/Logo_full.png"
 
   android_gravity: center

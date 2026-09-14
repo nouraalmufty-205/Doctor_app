@@ -23,7 +23,7 @@ class HelpCenterScreen extends StatelessWidget {
                 SizedBox(height: 38),
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
-                  child: SearchFeild(Text_feild: 'I have an issue with',hastextcolor: true, textColor: Color(0xff0EBE7F),),
+                  child: SearchFeild(textfeild: 'I have an issue with',hastextcolor: true, textColor: Color(0xff0EBE7F),),
                 ),
                 const SizedBox(height: 19),
                 Expanded(
