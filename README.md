@@ -1,3 +1,7 @@
+#Splash Screen
+
+<img width="353" height="807" alt="image" src="https://github.com/user-attachments/assets/ca8edff6-f75b-4093-abb5-51927273b482" />
+
 #Home Screen
 
 <img width="356" height="813" alt="image" src="https://github.com/user-attachments/assets/18647ed8-0b04-4a64-8550-974ce5c3af52" />
