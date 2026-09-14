@@ -83,7 +83,8 @@
 
 #Thank You Screen
 
-<img width="355" height="797" alt="image" src="https://github.com/user-attachments/assets/95ea52fa-cf59-4e9e-8689-6549f6a6940c" />
+<img width="348" height="786" alt="image" src="https://github.com/user-attachments/assets/4e3bc8ef-0f6b-4657-8197-b23afc156ba7" />
+
 
 
 
