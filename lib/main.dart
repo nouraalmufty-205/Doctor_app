@@ -7,6 +7,7 @@ import 'package:doctorapp/screens/doctorselecttime2.dart';
 import 'package:doctorapp/screens/finddoctorscreen.dart';
 import 'package:doctorapp/screens/help_center/help_center_screen.dart';
 import 'package:doctorapp/screens/homescreen.dart';
+import 'package:doctorapp/screens/main_diagonstic_screen/main_diagonstic_screen.dart';
 
 import 'package:doctorapp/screens/main_medicine_screen/main_medicine_order.dart';
 
@@ -34,7 +35,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: MyDoctorsScreen(),
+      home: MainMedicineOrder(),
     );
   }
 }
