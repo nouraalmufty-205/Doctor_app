@@ -1,5 +1,4 @@
 import 'package:doctorapp/core/confimation_screen.dart';
-import 'package:doctorapp/screens/all_records/all_records.dart';
 import 'package:doctorapp/screens/main_diagonstic_screen/main_diagonstic_screen.dart';
 import 'package:flutter/material.dart';
 

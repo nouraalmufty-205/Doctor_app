@@ -1,4 +1,5 @@
 import 'package:doctorapp/core/main_button.dart';
+import 'package:doctorapp/screens/patient_details/patient_details_screen.dart';
 import 'package:flutter/material.dart';
 
 class DiagonsticCard extends StatelessWidget {
@@ -60,6 +61,7 @@ class DiagonsticCard extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 20),
             child: MainButton(
+
               buttonw: 130,
               buttonh: 32,
               buttontext: buttontext,
@@ -113,6 +115,12 @@ class DiagonsticCard extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(right: 20),
                 child: MainButton(
+                                onPrease: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => const PatientDetailsScreen()),
+                );
+              },
                   buttonw: 110,
                   buttonh: 32,
                   buttontext: "Book Now",
