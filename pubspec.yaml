@@ -36,10 +36,9 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
   carousel_slider: ^5.1.2
-<<<<<<< HEAD
+
   flutter_native_splash: ^2.4.7
-=======
->>>>>>> ad7a750260e693da114ffc809185fcf6c0485303
+
   flutter_svg: ^2.3.0
 
 dev_dependencies:
@@ -93,7 +92,7 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/to/font-from-package
-<<<<<<< HEAD
+
 flutter_native_splash:
   color: "#FFFFFF"
   background_image: "assets/background.png"
@@ -106,6 +105,3 @@ flutter_native_splash:
     image: "assets/Logo_square_android12.png"
     icon_background_color: "#F5FAF7"
     color: "#F5FAF7"
-=======
-
->>>>>>> ad7a750260e693da114ffc809185fcf6c0485303

@@ -9,7 +9,7 @@ class MainMedicineCard extends StatelessWidget {
     required this.svgpath,
     required this.svgW,
     required this.svgH,
-    required this.cardText, 
+    required this.cardText,
   });
 
   final Color bkcolor;
@@ -26,8 +26,8 @@ class MainMedicineCard extends StatelessWidget {
         width: 160,
         height: 160,
         decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(8),
-        color: bkcolor,
+          borderRadius: BorderRadius.circular(8),
+          color: bkcolor,
         ),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -36,11 +36,19 @@ class MainMedicineCard extends StatelessWidget {
               child: CircleAvatar(
                 radius: 38,
                 backgroundColor: roundColor,
-                child: SvgPicture.asset(svgpath ,width: svgW, height: svgH,)
+                child: SvgPicture.asset(svgpath, width: svgW, height: svgH),
               ),
             ),
-            SizedBox(height: 10,),
-            Text(cardText,textAlign: TextAlign.center ,style: TextStyle(fontSize: 14,fontWeight: FontWeight(500),color: Color(0xff677294)),)
+            SizedBox(height: 10),
+            Text(
+              cardText,
+              textAlign: TextAlign.center,
+              style: TextStyle(
+                fontSize: 14,
+                fontWeight: FontWeight.w500,
+                color: Color(0xff677294),
+              ),
+            ),
           ],
         ),
       ),

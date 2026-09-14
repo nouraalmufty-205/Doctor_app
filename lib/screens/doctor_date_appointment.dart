@@ -8,28 +8,6 @@ class DoctorDateAppointment extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      // bottomNavigationBar: Container(
-      //   height: 409,
-      //   width: double.infinity,
-      //   decoration: BoxDecoration(
-      //     color: Colors.white,
-      //     borderRadius: BorderRadius.only(
-      //       topLeft: Radius.circular(45),
-      //       topRight: Radius.circular(45),
-      //     ),
-      //   ),
-      // body: Padding(
-      //   padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 35),
-      //   child: Column(
-      //     crossAxisAlignment: CrossAxisAlignment.start,
-      //     children: [
-      //       Text(
-      //         "Available Time",
-      //         style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
-      //       ),
-      //     ],
-      //   ),
-      // ),
       body: Container(
         width: double.infinity,
         height: double.infinity,
