@@ -88,6 +88,9 @@
 
 <img width="954" height="4094" alt="text2" src="https://github.com/user-attachments/assets/9b073d0a-3c7a-4fca-8ca5-78dc83a733ec" />
 
+# Patient detials
+
+<img width="1290" height="2796" alt="patient details" src="https://github.com/user-attachments/assets/afd02c4f-7706-457a-9122-d8eebe3a05d0" />
 
 #Find Doctors Screen
 
