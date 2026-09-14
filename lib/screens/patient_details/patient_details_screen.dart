@@ -12,7 +12,6 @@ class PatientDetailsScreen extends StatelessWidget {
         children: [
           ConfimationScreen(
             screensTitleText: "Patient Details", 
-            screenTitleNavigator: MainMedicineOrder(), 
             mainImage: "assets/patiant.png", 
             firstText: "Your cart is empty", 
             secandText: " ", 
