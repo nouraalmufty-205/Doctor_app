@@ -196,7 +196,7 @@ class AllRecordItem extends StatelessWidget {
                       height: 22,
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(6),
-                        color: const Color(0xff0EBE7F1A),
+                        color: const Color(0x1A0EBE7F),
                       ),
                       child: const Center(
                         child: Text(

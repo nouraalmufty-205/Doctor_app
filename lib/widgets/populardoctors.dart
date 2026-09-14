@@ -1,5 +1,4 @@
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:doctorapp/screens/homescreen.dart';
 import 'package:doctorapp/screens/populardoctorscreen.dart';
 
 import 'package:doctorapp/widgets/doctorcard.dart';

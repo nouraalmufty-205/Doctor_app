@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class MainButton extends StatelessWidget {
-  final double button_w;
-  final double button_h;
-  final double button_radius;
-  final String button_text;
+  final double buttonw;
+  final double buttonh;
+  final double buttonradius;
+  final String buttontext;
   final VoidCallback? onPrease;
   final bool? changeColor;
   final Color? textColor;
@@ -13,10 +13,10 @@ class MainButton extends StatelessWidget {
 
   const MainButton({
     super.key,
-    required this.button_w,
-    required this.button_h,
-    required this.button_text,
-    required this.button_radius,
+    required this.buttonw,
+    required this.buttonh,
+    required this.buttontext,
+    required this.buttonradius,
     this.onPrease,
     this.textColor,
     this.bkColor,
@@ -29,11 +29,11 @@ class MainButton extends StatelessWidget {
     return InkWell(
       onTap: onPrease,
       child: Container(
-        width: button_w,
-        height: button_h,
+        width: buttonw,
+        height: buttonh,
         decoration: BoxDecoration(
           color: changeColor == true ? bkColor ?? const Color(0xff0EBE7F) : const Color(0xff0EBE7F),
-          borderRadius: BorderRadius.circular(button_radius),
+          borderRadius: BorderRadius.circular(buttonradius),
           border: Border.all(
             color: changeColor == true
                 ? borderColor ?? Colors.transparent
@@ -42,7 +42,7 @@ class MainButton extends StatelessWidget {
         ),
         child: Center(
           child: Text(
-            button_text,
+            buttontext,
             style: TextStyle(
               color: changeColor == true ? textColor ?? const Color(0xffFFFFFF) : const Color(0xffFFFFFF),
               fontSize: 12,

@@ -30,7 +30,7 @@ class DiagonsticCard extends StatelessWidget {
         color: Colors.white,
         boxShadow: [
           BoxShadow(
-            color: Colors.black.withOpacity(0.08),
+            color: Colors.black.withValues(alpha: 0.08),
             blurRadius: 20,
             spreadRadius: 0,
           ),
@@ -59,10 +59,10 @@ class DiagonsticCard extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.only(left: 20),
             child: MainButton(
-              button_w: 130,
-              button_h: 32,
-              button_text: buttontext,
-              button_radius: 6,
+              buttonw: 130,
+              buttonh: 32,
+              buttontext: buttontext,
+              buttonradius: 6,
               changeColor: true,
               textColor: Color(0xff0EBE7F),
               bkColor: Colors.white,
@@ -102,10 +102,10 @@ class DiagonsticCard extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.only(right: 20),
                 child: MainButton(
-                  button_w: 110,
-                  button_h: 32,
-                  button_text: "Book Now",
-                  button_radius: 6,
+                  buttonw: 110,
+                  buttonh: 32,
+                  buttontext: "Book Now",
+                  buttonradius: 6,
                 ),
               ),
               SizedBox(height: 23,)

@@ -145,24 +145,24 @@ List<DiagonsticButtom> item = [
     color2: Color(0xff765AFC),
 
     buttonText: 'Free home\nSample pickup',
-    svg_Path: "assets/icons/home.svg",
+    svgPath: "assets/icons/home.svg",
   ),
   DiagonsticButtom(
     color1: Color(0xffFF484C),
     color2: Color(0xffFF6C60),
     buttonText: 'Practo\nasociate labs',
-    svg_Path: 'assets/icons/call_center.svg',
+    svgPath: 'assets/icons/call_center.svg',
   ),
   DiagonsticButtom(
     color1: Color(0xffFE7F44),
     color2: Color(0xffFFCF68),
     buttonText: 'E-Reports in\n24-72 hours',
-    svg_Path: 'assets/icons/E-report.svg',
+    svgPath: 'assets/icons/E-report.svg',
   ),
   DiagonsticButtom(
     color1: Color(0xff0EBE7E),
     color2: Color(0xff07D9AD),
     buttonText: 'Free follow-up\nwith a doctor',
-    svg_Path: 'assets/icons/auto.svg',
+    svgPath: 'assets/icons/auto.svg',
   ),
 ];

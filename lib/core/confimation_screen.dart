@@ -74,10 +74,10 @@ class ConfimationScreen extends StatelessWidget {
                       ),
                       const SizedBox(height: 48),
                       MainButton(
-                        button_w: buttonw,
-                        button_h: buttonh,
-                        button_text: buttontext,
-                        button_radius: buttonradius,
+                        buttonw: buttonw,
+                        buttonh: buttonh,
+                        buttontext: buttontext,
+                        buttonradius: buttonradius,
                         onPrease: () => Navigator.push(
                           context,
                           MaterialPageRoute(builder: (_) => route),
