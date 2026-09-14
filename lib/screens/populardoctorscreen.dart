@@ -27,7 +27,6 @@ class PopularDoctorsScreen extends StatelessWidget {
                 ScreensTitle(
                   icon: Icons.arrow_back_ios,
                   text: "",
-                  onPressed: () => Navigator.pop(context),
                 ),
                 SizedBox(height: 30),
                 PopularDoctors(doctors: allPopularDoctors),

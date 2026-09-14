@@ -1,4 +1,4 @@
-import 'package:doctorapp/screens/help_center/help_center_screen.dart';
+import 'package:doctorapp/screens/digonstic_test/digonstic_test_screen.dart';
 import 'package:flutter/material.dart';
 
 class HelpItem extends StatelessWidget {
@@ -11,7 +11,7 @@ class HelpItem extends StatelessWidget {
       padding: const EdgeInsets.only(left: 19 ,bottom: 35),
       child: InkWell(
         onTap: () {
-          Navigator.push(context, MaterialPageRoute(builder: (_)=> HelpCenterScreen()));
+          Navigator.push(context, MaterialPageRoute(builder: (_)=> DigonsticTestScreen()));
         },
         child: Row(
           children: [
