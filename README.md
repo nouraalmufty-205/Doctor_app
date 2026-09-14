@@ -14,6 +14,21 @@
 
 <img width="354" height="807" alt="image" src="https://github.com/user-attachments/assets/93d6b3d2-b222-4d0d-b837-ef45edc42867" />
 
+#Sign Up Screen 
+
+<img width="353" height="798" alt="image" src="https://github.com/user-attachments/assets/7bbdebad-2bcf-4ccc-978b-b6a1ae48ffbc" />
+
+#Login Screen
+
+<img width="352" height="793" alt="image" src="https://github.com/user-attachments/assets/a075b96e-a736-4acc-b02c-fc0652ecbbf6" />
+
+#forgot password bottom sheet
+
+<img width="359" height="788" alt="image" src="https://github.com/user-attachments/assets/7e7ab15e-6033-4f7d-a623-1c29e810083d" />
+
+
+
+
 #Home Screen
 
 <img width="356" height="813" alt="image" src="https://github.com/user-attachments/assets/18647ed8-0b04-4a64-8550-974ce5c3af52" />
@@ -67,8 +82,15 @@
 
 # Diagnostics test
 
-<img width="1290" height="2796" alt="text2" src="https://github.com/user-attachments/assets/835b8fe4-329b-4420-9665-6b052cc9fa69" />
+<img width="1290" height="2796" alt="Diagonstic Test" src="https://github.com/user-attachments/assets/f0d285e0-97b2-4dcd-941b-ab4fcb5c6909" />
 
+# Diagnostics test 2
+
+<img width="954" height="4094" alt="text2" src="https://github.com/user-attachments/assets/9b073d0a-3c7a-4fca-8ca5-78dc83a733ec" />
+
+# Patient detials
+
+<img width="1290" height="2796" alt="patient details" src="https://github.com/user-attachments/assets/afd02c4f-7706-457a-9122-d8eebe3a05d0" />
 
 #Find Doctors Screen
 
