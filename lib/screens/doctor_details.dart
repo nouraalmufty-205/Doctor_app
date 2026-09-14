@@ -9,146 +9,148 @@ class DoctorDetails extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/My_doctors_screen.png"),
-            fit: BoxFit.cover,
+    return SingleChildScrollView(
+      child: Scaffold(
+        backgroundColor: Colors.white,
+        body: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/My_doctors_screen.png"),
+              fit: BoxFit.cover,
+            ),
           ),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-          child: Column(
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-                  ScreensTitle(
-                    icon: Icons.arrow_back_ios,
-                    text: "Doctor Details",
-                  ),
-                  IconButton(
-                    icon: Icon(
-                      Icons.search_rounded,
-                      size: 30,
-                      color: Color(0xff677294),
+          child: Padding(
+            padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: [
+                    ScreensTitle(
+                      icon: Icons.arrow_back_ios,
+                      text: "Doctor Details",
                     ),
-                    onPressed: () {},
-                  ),
-                ],
-              ),
-              const SizedBox(height: 34),
-              Container(
-                height: 170,
-                width: 355,
-
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(12),
-                  color: Colors.white,
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(20),
-                  child: Column(
-                    children: [
-                      Row(
-                        children: [
-                          ClipRRect(child: Image.asset("assets/mydoctor5.png")),
-                          const SizedBox(width: 12),
-
-                          DoctorDetailsCard(),
-                        ],
+                    IconButton(
+                      icon: Icon(
+                        Icons.search_rounded,
+                        size: 30,
+                        color: Color(0xff677294),
                       ),
-                      const SizedBox(height: 15),
-                      SizedBox(
-                        width: 140,
-                        height: 32,
-                        child: ElevatedButton(
-                          style: ElevatedButton.styleFrom(
-                            backgroundColor: const Color(0xff0EBE7F),
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(8),
-                            ),
-                            elevation: 0,
-                          ),
-                          child: Text(
-                            "Book Now",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 16,
-                              fontWeight: FontWeight.w500,
-                            ),
-                          ),
-                          onPressed: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                builder: (context) => DoctorAppointmentScreen(),
-                              ),
-                            );
-                          },
+                      onPressed: () {},
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 34),
+                Container(
+                  height: 170,
+                  width: 355,
+      
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(12),
+                    color: Colors.white,
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(20),
+                    child: Column(
+                      children: [
+                        Row(
+                          children: [
+                            ClipRRect(child: Image.asset("assets/mydoctor5.png")),
+                            const SizedBox(width: 12),
+      
+                            DoctorDetailsCard(),
+                          ],
                         ),
-                      ),
-                    ],
+                        const SizedBox(height: 15),
+                        SizedBox(
+                          width: 140,
+                          height: 32,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              backgroundColor: const Color(0xff0EBE7F),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              elevation: 0,
+                            ),
+                            child: Text(
+                              "Book Now",
+                              style: TextStyle(
+                                color: Colors.white,
+                                fontSize: 16,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            onPressed: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => DoctorAppointmentScreen(),
+                                ),
+                              );
+                            },
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 25),
-              Container(
-                height: 84,
-                width: 305,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
-                ),
-                child: Padding(
-                  padding: const EdgeInsets.all(10),
-                  child: Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      _buildStatTile("100", "Running"),
-                      _buildStatTile("500", "Ongoing"),
-                      _buildStatTile("700", "Patient"),
-                    ],
+                const SizedBox(height: 25),
+                Container(
+                  height: 84,
+                  width: 305,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.white,
+                  ),
+                  child: Padding(
+                    padding: const EdgeInsets.all(10),
+                    child: Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        _buildStatTile("100", "Running"),
+                        _buildStatTile("500", "Ongoing"),
+                        _buildStatTile("700", "Patient"),
+                      ],
+                    ),
                   ),
                 ),
-              ),
-              const SizedBox(height: 27),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Text(
-                    "Services",
-                    style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
-                  ),
-                  _serviceItem(
-                    1,
-                    "Patient care should be the number one priority.",
-                  ),
-
-                  _serviceItem(
-                    2,
-                    "If you run your practiceyou know how frustrating.",
-                  ),
-                  _serviceItem(
-                    3,
-                    "That is why some of appointment reminder system.",
-                    isLast: true,
-                  ),
-                ],
-              ),
-              const SizedBox(height: 30),
-              Container(
-                height: 210,
-                width: 335,
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(10),
-                  color: Colors.white,
+                const SizedBox(height: 27),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text(
+                      "Services",
+                      style: TextStyle(fontSize: 20, fontWeight: FontWeight.w500),
+                    ),
+                    _serviceItem(
+                      1,
+                      "Patient care should be the number one priority.",
+                    ),
+      
+                    _serviceItem(
+                      2,
+                      "If you run your practiceyou know how frustrating.",
+                    ),
+                    _serviceItem(
+                      3,
+                      "That is why some of appointment reminder system.",
+                      isLast: true,
+                    ),
+                  ],
                 ),
-                child: Image.asset("assets/map.png"),
-              ),
-            ],
+                const SizedBox(height: 30),
+                Container(
+                  height: 210,
+                  width: 335,
+                  decoration: BoxDecoration(
+                    borderRadius: BorderRadius.circular(10),
+                    color: Colors.white,
+                  ),
+                  child: Image.asset("assets/map.png"),
+                ),
+              ],
+            ),
           ),
         ),
       ),

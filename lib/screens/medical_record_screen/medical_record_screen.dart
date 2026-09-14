@@ -15,10 +15,10 @@ class MedicalRecordScreen extends StatelessWidget {
       firstText: 'Add a medical record.',
       secandText:
           'A detailed health history helps a doctor diagnose \nyou btter.',
-      button_w: 270,
-      button_h: 54,
-      button_text: 'Add a record',
-      button_radius: 6,
+      buttonw: 270,
+      buttonh: 54,
+      buttontext: 'Add a record',
+      buttonradius: 6,
       route: AddRecordScreen(),
     );
   }

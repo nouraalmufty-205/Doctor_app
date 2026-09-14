@@ -1,5 +1,6 @@
 import 'package:doctorapp/core/confimation_screen.dart';
 import 'package:doctorapp/screens/add_record_screen/add_record_screen.dart';
+import 'package:doctorapp/screens/location_service_screen.dart/location_service.dart';
 import 'package:flutter/material.dart';
 
 class MedicineOrderScreen extends StatelessWidget {
@@ -14,10 +15,10 @@ class MedicineOrderScreen extends StatelessWidget {
         mainImage: 'assets/medicneorders.png',
         firstText: 'No orders placed yet',
         secandText: 'Place your first order now.',
-        button_w: 270,
-        button_h: 40,
-        button_text: 'Order medicines',
-        button_radius: 6, route:MedicineOrderScreen() ,
+        buttonw: 270,
+        buttonh: 40,
+        buttontext: 'Order medicines',
+        buttonradius: 6, route:LocationService() ,
       ),
     );
   }

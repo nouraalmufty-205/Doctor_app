@@ -1,3 +1,4 @@
+import 'package:doctorapp/screens/help_center/help_center_screen.dart';
 import 'package:flutter/material.dart';
 
 class HelpItem extends StatelessWidget {
@@ -8,23 +9,28 @@ class HelpItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.only(left: 19 ,bottom: 35),
-      child: Row(
-        children: [
-          Expanded(
-            child: Text(
-              itemText,
-              style: TextStyle(
-                fontSize: 18,
-                fontWeight: FontWeight.w300,
-                color: Color(0xff677294),
+      child: InkWell(
+        onTap: () {
+          Navigator.push(context, MaterialPageRoute(builder: (_)=> HelpCenterScreen()));
+        },
+        child: Row(
+          children: [
+            Expanded(
+              child: Text(
+                itemText,
+                style: TextStyle(
+                  fontSize: 18,
+                  fontWeight: FontWeight.w300,
+                  color: Color(0xff677294),
+                ),
               ),
             ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(right: 20),
-            child: Icon(Icons.arrow_forward_ios_outlined ,color: Color(0xff677294),),
-          ),
-        ],
+            Padding(
+              padding: const EdgeInsets.only(right: 20),
+              child: Icon(Icons.arrow_forward_ios_outlined ,color: Color(0xff677294),),
+            ),
+          ],
+        ),
       ),
     );
   }
