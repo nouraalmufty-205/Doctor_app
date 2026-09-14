@@ -14,6 +14,21 @@
 
 <img width="354" height="807" alt="image" src="https://github.com/user-attachments/assets/93d6b3d2-b222-4d0d-b837-ef45edc42867" />
 
+#Sign Up Screen 
+
+<img width="353" height="798" alt="image" src="https://github.com/user-attachments/assets/7bbdebad-2bcf-4ccc-978b-b6a1ae48ffbc" />
+
+#Login Screen
+
+<img width="352" height="793" alt="image" src="https://github.com/user-attachments/assets/a075b96e-a736-4acc-b02c-fc0652ecbbf6" />
+
+#forgot password bottom sheet
+
+<img width="359" height="788" alt="image" src="https://github.com/user-attachments/assets/7e7ab15e-6033-4f7d-a623-1c29e810083d" />
+
+
+
+
 #Home Screen
 
 <img width="356" height="813" alt="image" src="https://github.com/user-attachments/assets/18647ed8-0b04-4a64-8550-974ce5c3af52" />
