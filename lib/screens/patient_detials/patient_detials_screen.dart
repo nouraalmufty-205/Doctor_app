@@ -18,7 +18,7 @@ class PatientDetialsScreen extends StatelessWidget {
         buttonh: 54.0,
         buttontext: 'Add Tests',
         buttonradius: 6,
-        route: LocationService(), screenTitleNavigator: MainDiagonsticScreen(),
+        route: LocationService(), 
       ),
     );
   }
