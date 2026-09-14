@@ -20,9 +20,13 @@ import 'package:doctorapp/screens/menu_screen/menu_screen.dart';
 import 'package:doctorapp/screens/livescreen.dart';
 import 'package:doctorapp/screens/my_doctors/my_doctors_screen.dart';
 
+import 'package:doctorapp/screens/patient_detials/patient_detials_screen.dart';
+
+
 import 'package:doctorapp/screens/patient_details/patient_details_screen.dart';
 
 import 'package:doctorapp/screens/onbording_screen/onbording1.dart';
+
 
 import 'package:doctorapp/widgets/navbar.dart';
 
