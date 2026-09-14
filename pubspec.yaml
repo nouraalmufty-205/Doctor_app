@@ -95,7 +95,7 @@ flutter:
 
 flutter_native_splash:
   color: "#FFFFFF"
-  background_image: "assets/background.png"
+  background_image: "assets/My_doctors_screen.png"
   image: "assets/Logo_full.png"
 
   android_gravity: center
