@@ -67,7 +67,11 @@
 
 # Diagnostics test
 
-<img width="1290" height="2796" alt="text2" src="https://github.com/user-attachments/assets/835b8fe4-329b-4420-9665-6b052cc9fa69" />
+<img width="1290" height="2796" alt="Diagonstic Test" src="https://github.com/user-attachments/assets/f0d285e0-97b2-4dcd-941b-ab4fcb5c6909" />
+
+# Diagnostics test 2
+
+<img width="954" height="4094" alt="text2" src="https://github.com/user-attachments/assets/9b073d0a-3c7a-4fca-8ca5-78dc83a733ec" />
 
 
 #Find Doctors Screen
