@@ -33,9 +33,6 @@ class DoctorDateAppointment extends StatelessWidget {
                         ScreensTitle(
                           icon: Icons.arrow_back_ios,
                           text: "Appointment",
-                          onPressed: () {
-                            Navigator.pop(context);
-                          },
                         ),
                         const SizedBox(height: 29),
                         Image.asset(

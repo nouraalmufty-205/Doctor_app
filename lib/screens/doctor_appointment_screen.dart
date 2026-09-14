@@ -37,9 +37,7 @@ class _DoctorAppointmentScreenState extends State<DoctorAppointmentScreen> {
                     ScreensTitle(
                       icon: Icons.arrow_back_ios,
                       text: "Appointment",
-                      onPressed: () {
-                        Navigator.pop(context);
-                      },
+
                     ),
                     const SizedBox(height: 34),
       

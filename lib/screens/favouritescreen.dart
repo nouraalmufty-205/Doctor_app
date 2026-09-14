@@ -33,9 +33,6 @@ class _FavoriteScreenState extends State<FavouriteScreen> {
               child: ScreensTitle(
                 icon: Icons.arrow_back_ios,
                 text: "Favourite Doctors",
-                onPressed: () {
-                  Navigator.pop(context);
-                },
               ),
             ),
             const SizedBox(height: 20),
