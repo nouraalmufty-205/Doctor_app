@@ -11,7 +11,6 @@ class MedicineOrderScreen extends StatelessWidget {
     return Scaffold(
       body: ConfimationScreen(
         screensTitleText: 'Medicine Orders',
-        screenTitleNavigator: AddRecordScreen(),
         mainImage: 'assets/medicneorders.png',
         firstText: 'No orders placed yet',
         secandText: 'Place your first order now.',

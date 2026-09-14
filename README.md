@@ -53,6 +53,11 @@
 
 <img width="1170" height="2532" alt="help center" src="https://github.com/user-attachments/assets/604e1672-5211-45db-a9b5-6c314c89602c" />
 
+# Diagnostics test
+
+<img width="1290" height="2796" alt="text2" src="https://github.com/user-attachments/assets/835b8fe4-329b-4420-9665-6b052cc9fa69" />
+
+
 #Find Doctors Screen
 
 <img width="351" height="812" alt="image" src="https://github.com/user-attachments/assets/7955d40b-4292-44aa-abda-8cf3087cb4ce" />

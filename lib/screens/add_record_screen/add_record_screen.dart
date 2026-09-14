@@ -22,14 +22,7 @@ class AddRecordScreen extends StatelessWidget {
                 ScreensTitle(
                   icon: Icons.arrow_back_ios_new_outlined,
                   text: "Add Records",
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                        builder: (_) => const MedicalRecordScreen(),
-                      ),
-                    );
-                  },
+
                 ),
                 const SizedBox(height: 38),
                 Row(
