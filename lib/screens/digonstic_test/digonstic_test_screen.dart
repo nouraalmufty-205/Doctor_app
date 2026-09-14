@@ -1,6 +1,5 @@
 import 'package:doctorapp/core/confimation_screen.dart';
 import 'package:doctorapp/screens/all_records/all_records.dart';
-import 'package:doctorapp/screens/help_center/help_center_screen.dart';
 import 'package:flutter/material.dart';
 
 class DigonsticTestScreen extends StatelessWidget {

@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class SearchFeild extends StatelessWidget {
   final IconData? lIcon;
-  final String Text_feild;
+  final String textfeild;
   final IconData? ricon;
   final bool? hastextcolor;
   final Color? textColor;
@@ -10,7 +10,7 @@ class SearchFeild extends StatelessWidget {
   const SearchFeild({
     super.key,
     this.lIcon,
-    required this.Text_feild,
+    required this.textfeild,
     this.ricon, this.hastextcolor, this.textColor,
   });
 
@@ -38,7 +38,7 @@ class SearchFeild extends StatelessWidget {
               : const TextStyle(color: Color(0xff677294)),
           prefixIcon: lIcon != null ? Icon(lIcon) : null,
           suffixIcon: ricon != null ? Icon(ricon) : null,
-          hintText: Text_feild,
+          hintText: textfeild,
         ),
       ),
     );

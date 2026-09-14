@@ -29,7 +29,7 @@ class MainMedicineOrder extends StatelessWidget {
               Padding(
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: SearchFeild(
-                  Text_feild: 'Search',
+                  textfeild: 'Search',
                   lIcon: Icons.search,
                   ricon: Icons.close,
                 ),
@@ -61,37 +61,37 @@ class MainMedicineOrder extends StatelessWidget {
 List<MainMedicineCard> products = [
     MainMedicineCard(
     bkcolor: Colors.white,
-    roundColor: Color(0xFFC6EFE5).withOpacity(0.76),
+    roundColor: Color(0xFFC6EFE5).withValues(alpha: 0.76),
     svgpath: "assets/icons/box.svg",
     cardText: 'Guide to medicine\norder', svgW: 24, svgH: 27.56,
   ),
     MainMedicineCard(
     bkcolor: Colors.white,
-    roundColor: Color(0xFFC6EFE5).withOpacity(0.76),
+    roundColor: Color(0xFFC6EFE5).withValues(alpha: 0.76),
     svgpath: "assets/icons/paper.svg",
     cardText: 'Prescription related\nissues', svgW: 23, svgH: 30.19,
   ),
     MainMedicineCard(
     bkcolor: Colors.white,
-    roundColor: Color(0xFFC6EFE5).withOpacity(0.76),
+    roundColor: Color(0xFFC6EFE5).withValues(alpha: 0.76),
     svgpath: "assets/icons/shopcar.svg",
     cardText: 'Order status', svgW: 28, svgH: 28,
   ),
     MainMedicineCard(
     bkcolor: Colors.white,
-    roundColor: Color(0xFFC6EFE5).withOpacity(0.76),
+    roundColor: Color(0xFFC6EFE5).withValues(alpha:0.76),
     svgpath: "assets/icons/moto.svg",
     cardText: 'Order delivery', svgW: 24, svgH: 22.36,
   ),
     MainMedicineCard(
     bkcolor: Colors.white,
-    roundColor: Color(0xFFC6EFE5).withOpacity(0.76),
+    roundColor: Color(0xFFC6EFE5).withValues(alpha:0.76),
     svgpath: "assets/icons/creditcrad.svg",
     cardText: 'Payments & Refunds', svgW: 26.91, svgH: 18.5,
   ),
     MainMedicineCard(
     bkcolor: Colors.white,
-    roundColor: Color(0xFFC6EFE5).withOpacity(0.76),
+    roundColor: Color(0xFFC6EFE5).withValues(alpha: 0.76),
     svgpath: "assets/icons/return.svg",
     cardText: 'Order returns', svgW: 27, svgH: 28.22
 

@@ -136,7 +136,7 @@ class _DoctorAppointmentScreenState extends State<DoctorAppointmentScreen> {
                                   border: Border.all(
                                     color: const Color(
                                       0xff0EBE7F,
-                                    ).withOpacity(0.3),
+                                    ).withValues(alpha: 0.3),
                                     width: 1,
                                   ),
                                 ),

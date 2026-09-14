@@ -1,8 +1,5 @@
-import 'package:doctorapp/core/favourite_icon.dart';
 import 'package:doctorapp/core/screens_title.dart';
-import 'package:doctorapp/model/doctor_model.dart';
 import 'package:doctorapp/model/favourite_doctor_model.dart';
-import 'package:doctorapp/screens/homescreen.dart';
 import 'package:doctorapp/widgets/doctor_grid_tile.dart';
 import 'package:doctorapp/widgets/featuredoctor.dart';
 import 'package:flutter/material.dart';

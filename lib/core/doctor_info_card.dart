@@ -1,5 +1,4 @@
 import 'package:doctorapp/core/favourite_icon.dart';
-import 'package:doctorapp/core/screens_title.dart';
 import 'package:flutter/material.dart';
 
 class DoctorInfoCard extends StatefulWidget {
@@ -23,7 +22,7 @@ class DoctorInfoCard extends StatefulWidget {
 }
 
 class _MyWidgetState extends State<DoctorInfoCard> {
-  bool _isLiked = false;
+
   @override
   Widget build(BuildContext context) {
     return Column(

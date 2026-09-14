@@ -25,7 +25,7 @@ class MyDoctorsScreen extends StatelessWidget {
                 Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: const SearchFeild(
-                    Text_feild: 'search',
+                    textfeild: 'search',
                     lIcon: Icons.search,
                     ricon: Icons.close,
                   ),

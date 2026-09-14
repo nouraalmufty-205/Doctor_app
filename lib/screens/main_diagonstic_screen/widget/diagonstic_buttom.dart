@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
 class DiagonsticButtom extends StatelessWidget {
-  const DiagonsticButtom({super.key, required this.color1, required this.color2, required this.buttonText, required this.svg_Path});
+  const DiagonsticButtom({super.key, required this.color1, required this.color2, required this.buttonText, required this.svgPath});
   final Color color1;
   final Color color2;
-  final String svg_Path;
+  final String svgPath;
   final String buttonText;
   @override
   Widget build(BuildContext context) {
@@ -24,7 +24,7 @@ class DiagonsticButtom extends StatelessWidget {
           ),
           child: Center(
             child: SvgPicture.asset(
-              svg_Path,
+              svgPath,
               width: 20,
               height: 20,
               fit: BoxFit.contain,
