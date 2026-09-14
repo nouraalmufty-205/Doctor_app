@@ -10,7 +10,6 @@ class LocationService extends StatelessWidget {
     return Scaffold(
       body: ConfimationScreen(
         screensTitleText: "Enable Location Services",
-        screenTitleNavigator: LocationService(),
         mainImage: "assets/locationservice.png",
         firstText: "Location",
         secandText: "Your location services are switched off. Please\nenable location, to help us serve better.",

@@ -21,12 +21,7 @@ class AllRecords extends StatelessWidget {
                 ScreensTitle(
                   icon: Icons.arrow_back_ios_new_outlined,
                   text: "All Records",
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (_) => AddRecordScreen()),
-                    );
-                  },
+                
                 ),
                 SizedBox(height: 38),
                 AllRecordItem(
