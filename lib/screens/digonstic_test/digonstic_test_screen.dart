@@ -1,5 +1,6 @@
 import 'package:doctorapp/core/confimation_screen.dart';
 import 'package:doctorapp/screens/all_records/all_records.dart';
+import 'package:doctorapp/screens/main_diagonstic_screen/main_diagonstic_screen.dart';
 import 'package:flutter/material.dart';
 
 class DigonsticTestScreen extends StatelessWidget {
@@ -17,7 +18,7 @@ class DigonsticTestScreen extends StatelessWidget {
         buttonh: 40,
         buttontext: 'Book Now',
         buttonradius: 6,
-        route: AllRecords(),
+        route: MainDiagonsticScreen(),
       ),
     );
   }

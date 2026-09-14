@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: PatientDetailsScreen(),
+      home: MyDoctorsScreen(),
     );
 
     return MaterialApp(debugShowCheckedModeBanner: false, home: OnBording1());
