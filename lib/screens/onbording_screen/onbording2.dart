@@ -2,6 +2,7 @@ import 'package:doctorapp/core/back_ground_screen.dart';
 import 'package:doctorapp/core/greenbotton.dart';
 import 'package:doctorapp/screens/homescreen.dart';
 import 'package:doctorapp/screens/onbording_screen/onbording3.dart';
+import 'package:doctorapp/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:blobs/blobs.dart';
 
@@ -105,7 +106,9 @@ class OnBording2 extends StatelessWidget {
                       ontap: () {
                         Navigator.push(
                           context,
-                          MaterialPageRoute(builder: (context) => OnBording3()),
+                          MaterialPageRoute(
+                            builder: (context) => SignUpScreen(),
+                          ),
                         );
                       },
                     ),

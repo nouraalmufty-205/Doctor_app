@@ -1,20 +1,20 @@
 import 'package:doctorapp/core/back_ground_screen.dart';
 import 'package:doctorapp/core/greenbotton.dart';
 import 'package:doctorapp/screens/homescreen.dart';
-import 'package:doctorapp/screens/login_screen.dart';
+import 'package:doctorapp/screens/signup_screen.dart';
 import 'package:doctorapp/widgets/costume_social_button.dart';
 import 'package:doctorapp/widgets/custome_Input_field.dart';
+import 'package:doctorapp/widgets/forgotpasswordsheet.dart';
 import 'package:flutter/material.dart';
 
-class SignUpScreen extends StatefulWidget {
-  const SignUpScreen({super.key});
+class LoginScreen extends StatefulWidget {
+  const LoginScreen({super.key});
 
   @override
-  State<SignUpScreen> createState() => _SignUpScreenState();
+  State<LoginScreen> createState() => _LoginScreenState();
 }
 
-class _SignUpScreenState extends State<SignUpScreen> {
-  bool _isAgreed = false;
+class _LoginScreenState extends State<LoginScreen> {
   bool _obscurePassword = true;
   final _formKey = GlobalKey<FormState>();
   void _submitForm() {
@@ -34,7 +34,13 @@ class _SignUpScreenState extends State<SignUpScreen> {
         height: double.infinity,
         child: Stack(
           children: [
-            Positioned.fill(child: const BackGroundScreen()),
+            Positioned(
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              child: const BackGroundScreen(),
+            ),
 
             SafeArea(
               child: SingleChildScrollView(
@@ -43,9 +49,10 @@ class _SignUpScreenState extends State<SignUpScreen> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.center,
                     children: [
-                      const SizedBox(height: 50),
+                      const SizedBox(height: 60),
+
                       const Text(
-                        "Join us to start searching",
+                        "Welcome back",
                         style: TextStyle(
                           fontSize: 24,
                           fontWeight: FontWeight.w700,
@@ -70,8 +77,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           Expanded(
                             child: CustomSocialButton(
                               label: "Google",
-
-                              imageAssetPath: 'assets/google.png',
+                              imageAssetPath: "assets/google.png",
                             ),
                           ),
                           const SizedBox(width: 16),
@@ -85,8 +91,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
                       ),
                       const SizedBox(height: 35),
 
-                      CustomInputField(hintText: "Name"),
-                      const SizedBox(height: 16),
                       Form(
                         key: _formKey,
                         child: CustomInputField(
@@ -108,6 +112,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                         ),
                       ),
                       const SizedBox(height: 16),
+
                       CustomInputField(
                         hintText: "Password",
                         obscureText: _obscurePassword,
@@ -142,62 +147,46 @@ class _SignUpScreenState extends State<SignUpScreen> {
 
                       GestureDetector(
                         onTap: () {
-                          setState(() {
-                            _isAgreed = !_isAgreed;
-                          });
+                          showModalBottomSheet(
+                            context: context,
+                            isScrollControlled: true,
+                            useSafeArea: true,
+                            backgroundColor: Colors.transparent,
+                            builder: (context) => ForgotPasswordBottomSheet(),
+                          );
                         },
-                        child: Row(
-                          children: [
-                            Container(
-                              width: 18,
-                              height: 18,
-                              decoration: BoxDecoration(
-                                shape: BoxShape.circle,
-                                color: _isAgreed
-                                    ? const Color(0xff0EBE7E)
-                                    : const Color(0xffD1D5DB),
-                              ),
-                              child: _isAgreed
-                                  ? const Icon(
-                                      Icons.check,
-                                      size: 12,
-                                      color: Colors.white,
-                                    )
-                                  : null,
-                            ),
-                            const SizedBox(width: 12),
-                            const Expanded(
-                              child: Text(
-                                "I agree with the Terms of Service & Privacy Policy",
-                                style: TextStyle(
-                                  fontSize: 13,
-                                  color: Color(0xff677294),
-                                ),
-                              ),
-                            ),
-                          ],
+                        child: const Text(
+                          "Forgor password",
+                          style: TextStyle(
+                            fontSize: 14,
+                            fontWeight: FontWeight.w500,
+                            color: Color(0xff0EBE7E),
+                          ),
                         ),
                       ),
                       const SizedBox(height: 35),
 
-                      GreenBotton(
-                        title: "Sign Up",
-                        ontap: () {
-                          Navigator.push(
-                            context,
-                            MaterialPageRoute(
-                              builder: (context) => LoginScreen(),
-                            ),
-                          );
-                        },
+                      SizedBox(
+                        width: double.infinity,
+                        child: GreenBotton(
+                          title: "Login",
+                          ontap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                builder: (context) => HomeScreen(),
+                              ),
+                            );
+                          },
+                        ),
                       ),
-                      const SizedBox(height: 170),
+                      const SizedBox(height: 130),
 
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
                           const Text(
-                            "Have an account? ",
+                            "Don't have an account? ",
                             style: TextStyle(
                               fontSize: 14,
                               color: Color(0xff0EBE7E),
@@ -208,12 +197,12 @@ class _SignUpScreenState extends State<SignUpScreen> {
                               Navigator.push(
                                 context,
                                 MaterialPageRoute(
-                                  builder: (context) => LoginScreen(),
+                                  builder: (context) => const SignUpScreen(),
                                 ),
                               );
                             },
                             child: const Text(
-                              "Log in",
+                              "Join us",
                               style: TextStyle(
                                 fontSize: 14,
                                 fontWeight: FontWeight.w600,
