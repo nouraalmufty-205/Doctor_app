@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class GreenBotton extends StatelessWidget {
   final String title;
-  const GreenBotton({super.key, required this.title});
+  final Function()? ontap;
+  const GreenBotton({super.key, required this.title, this.ontap});
 
   @override
   Widget build(BuildContext context) {
@@ -19,7 +20,7 @@ class GreenBotton extends StatelessWidget {
         child: Padding(
           padding: const EdgeInsets.all(8),
           child: GestureDetector(
-            onTap: () {},
+            onTap: ontap,
             child: Text(
               title,
               style: TextStyle(

@@ -24,7 +24,11 @@ class PopularDoctorsScreen extends StatelessWidget {
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                ScreensTitle(icon: Icons.arrow_back_ios, text: ""),
+                ScreensTitle(
+                  icon: Icons.arrow_back_ios,
+                  text: "",
+                  onPressed: () => Navigator.pop(context),
+                ),
                 SizedBox(height: 30),
                 PopularDoctors(doctors: allPopularDoctors),
                 SizedBox(height: 20),

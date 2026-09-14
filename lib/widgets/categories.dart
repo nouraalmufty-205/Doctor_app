@@ -21,12 +21,7 @@ class Categories extends StatelessWidget {
           child: Container(
             decoration: BoxDecoration(borderRadius: BorderRadius.circular(20)),
             child: Center(
-              child: Image.asset(
-                categories[itemIndex],
-                width: 90,
-                height: 90,
-                // tints the icon white if it's a solid-shape PNG/SVG-derived asset
-              ),
+              child: Image.asset(categories[itemIndex], width: 90, height: 90),
             ),
           ),
         );

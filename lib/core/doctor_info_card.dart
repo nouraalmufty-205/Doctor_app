@@ -115,7 +115,7 @@ class _MyWidgetState extends State<DoctorInfoCard> {
                   ),
                 ],
               ),
-              FavouriteIcon(),
+              Positioned(right: 0, top: 0, child: FavouriteIcon()),
             ],
           ),
         ),

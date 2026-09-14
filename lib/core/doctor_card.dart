@@ -1,3 +1,4 @@
+import 'package:doctorapp/core/favourite_icon.dart';
 import 'package:doctorapp/core/main_button.dart';
 import 'package:doctorapp/screens/medical_record_screen/medical_record_screen.dart';
 import 'package:doctorapp/model/doctor_model.dart';
@@ -157,25 +158,7 @@ class _DoctorCardMainState extends State<DoctorCardMain> {
                         ),
                       ],
                     ),
-                    Positioned(
-                      right: 0,
-                      top: 0,
-                      child: InkWell(
-                        onTap: () {
-                          setState(() {
-                            colored = !colored;
-                          });
-                        },
-                        child: Icon(
-                          colored
-                              ? Icons.favorite
-                              : Icons.favorite_border_outlined,
-                          color: colored
-                              ? Colors.red
-                              : const Color(0xff67729480),
-                        ),
-                      ),
-                    ),
+                    Positioned(right: 0, top: 0, child: FavouriteIcon()),
                   ],
                 ),
                 if (widget.doctorModel.hasBooking ?? false) ...[
@@ -225,15 +208,16 @@ class _DoctorCardMainState extends State<DoctorCardMain> {
                             Navigator.push(
                               context,
                               MaterialPageRoute(
-                                builder: (context) => const MedicalRecordScreen(),
+                                builder: (context) =>
+                                    const MedicalRecordScreen(),
                               ),
                             );
                           }),
                         },
-                        button_w: 112,
-                        button_h: 34,
+                        button_w: 140,
+                        button_h: 40,
                         button_text: 'Book Now',
-                        button_radius: 4,
+                        button_radius: 6,
                       ),
                     ],
                   ),
