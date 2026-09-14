@@ -13,9 +13,7 @@ class MainDiagonsticScreen extends StatelessWidget {
       body: SingleChildScrollView(
         child: Stack(
           children: [
-            Positioned.fill(
-              child: BackGroundScreen(),
-            ),
+            Positioned.fill(child: BackGroundScreen()),
             Column(
               children: [
                 ScreensTitle(
@@ -32,7 +30,7 @@ class MainDiagonsticScreen extends StatelessWidget {
                         textAlign: TextAlign.left,
                         style: TextStyle(
                           fontSize: 22,
-                          fontWeight: FontWeight(500),
+                          fontWeight: FontWeight.w500,
                           height: 1.65,
                         ),
                       ),
@@ -41,7 +39,7 @@ class MainDiagonsticScreen extends StatelessWidget {
                         "Upto 45% off + get 10% healthcash back",
                         textAlign: TextAlign.left,
                         style: TextStyle(
-                          fontWeight: FontWeight(300),
+                          fontWeight: FontWeight.w300,
                           height: 1.65,
                           color: Color(0xff0EBE7F),
                         ),
@@ -65,7 +63,7 @@ class MainDiagonsticScreen extends StatelessWidget {
                         'Recommend for you',
                         style: TextStyle(
                           fontSize: 18,
-                          fontWeight: FontWeight(700),
+                          fontWeight: FontWeight.w700,
                         ),
                       ),
                       SizedBox(height: 16),
@@ -75,9 +73,8 @@ class MainDiagonsticScreen extends StatelessWidget {
                           shrinkWrap: true,
                           physics: const NeverScrollableScrollPhysics(),
                           itemCount: cards.length,
-                          separatorBuilder: (context, index) => SizedBox(
-                            height: 14,
-                          ),
+                          separatorBuilder: (context, index) =>
+                              SizedBox(height: 14),
                           itemBuilder: (context, index) {
                             return DiagonsticCard(
                               title: cards[index].title,
@@ -91,9 +88,7 @@ class MainDiagonsticScreen extends StatelessWidget {
                             );
                           },
                         ),
-                      )
-
-                      
+                      ),
                     ],
                   ),
                 ),
@@ -117,7 +112,7 @@ List<DiagonsticCard> cards = [
     oldprice: '35% off',
     cashback: '\n 10% Health cashback T&C',
   ),
-    DiagonsticCard(
+  DiagonsticCard(
     title: 'Working Women’s Health Checkup',
     suptitle: 'Ideal for individuals aged 21-40 years',
     buttontext: '119 tests included',
@@ -127,7 +122,7 @@ List<DiagonsticCard> cards = [
     oldprice: '35% off',
     cashback: '\n 10% Health cashback T&C',
   ),
-    DiagonsticCard(
+  DiagonsticCard(
     title: 'Active Professional Health Checkup',
     suptitle: 'Ideal for individuals aged 21-40 years',
     buttontext: '100 tests included',

@@ -8,16 +8,17 @@ class DiagonsticCard extends StatelessWidget {
     required this.suptitle,
     required this.buttontext,
     required this.imagepath,
-    required this.price, required this.discount,required this.oldprice,
+    required this.price,
+    required this.discount,
+    required this.oldprice,
     required this.cashback,
-
   });
   final String title;
   final String suptitle;
   final String buttontext;
   final String imagepath;
   final String price;
-  final String  discount;
+  final String discount;
   final String oldprice;
   final dynamic cashback;
 
@@ -43,7 +44,7 @@ class DiagonsticCard extends StatelessWidget {
             padding: const EdgeInsets.only(top: 12, left: 19),
             child: Text(
               title,
-              style: TextStyle(fontSize: 16, fontWeight: FontWeight(500)),
+              style: TextStyle(fontSize: 16, fontWeight: FontWeight.w500),
             ),
           ),
           Padding(
@@ -51,7 +52,7 @@ class DiagonsticCard extends StatelessWidget {
             child: Text(
               suptitle,
               style: TextStyle(
-                fontWeight: FontWeight(300),
+                fontWeight: FontWeight.w300,
                 color: Color(0xff677294),
               ),
             ),
@@ -80,20 +81,30 @@ class DiagonsticCard extends StatelessWidget {
               Text.rich(
                 TextSpan(
                   text: price,
-                  style: TextStyle(fontSize: 18, fontWeight: FontWeight(400)),
+                  style: TextStyle(fontSize: 18, fontWeight: FontWeight.w400),
                   children: <InlineSpan>[
                     TextSpan(
-                      text: oldprice ,style: 
-                      TextStyle(fontSize: 16, fontWeight: FontWeight(400),color: Color(0xff677294))
+                      text: oldprice,
+                      style: TextStyle(
+                        fontSize: 16,
+                        fontWeight: FontWeight.w400,
+                        color: Color(0xff677294),
+                      ),
                     ),
                     TextSpan(
-                      text: discount ,style: 
-                      TextStyle( fontWeight: FontWeight(400),color: Color(0xff0EBE7F))
+                      text: discount,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        color: Color(0xff0EBE7F),
+                      ),
                     ),
                     TextSpan(
-                      text: cashback ,style: 
-                      TextStyle(fontWeight: FontWeight(400),color: Color(0xff677294))
-                    )
+                      text: cashback,
+                      style: TextStyle(
+                        fontWeight: FontWeight.w400,
+                        color: Color(0xff677294),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -108,7 +119,7 @@ class DiagonsticCard extends StatelessWidget {
                   buttonradius: 6,
                 ),
               ),
-              SizedBox(height: 23,)
+              SizedBox(height: 23),
             ],
           ),
         ],
