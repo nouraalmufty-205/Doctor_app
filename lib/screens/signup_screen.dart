@@ -17,7 +17,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
   bool _isAgreed = false;
   bool _obscurePassword = true;
   final _formKey = GlobalKey<FormState>();
-  void _submitForm() {
+  void submitForm() {
     if (_formKey.currentState!.validate()) {
       ScaffoldMessenger.of(
         context,

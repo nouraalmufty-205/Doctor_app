@@ -1,5 +1,5 @@
 import 'package:doctorapp/core/main_button.dart';
-import 'package:doctorapp/screens/patient_details/patient_details_screen.dart';
+import 'package:doctorapp/screens/patient_detials/patient_detials_screen.dart';
 import 'package:flutter/material.dart';
 
 class DiagonsticCard extends StatelessWidget {
@@ -118,7 +118,7 @@ class DiagonsticCard extends StatelessWidget {
                                 onPrease: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const PatientDetailsScreen()),
+                  MaterialPageRoute(builder: (context) => const PatientDetialsScreen()),
                 );
               },
                   buttonw: 110,

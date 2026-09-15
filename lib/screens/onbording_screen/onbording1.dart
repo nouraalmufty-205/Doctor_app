@@ -1,12 +1,10 @@
 import 'package:blobs/blobs.dart';
 import 'package:doctorapp/core/back_ground_screen.dart';
 import 'package:doctorapp/core/greenbotton.dart';
-import 'package:doctorapp/core/main_button.dart';
 import 'package:doctorapp/screens/homescreen.dart';
-import 'package:doctorapp/screens/onbording_screen/onbording2.dart';
 import 'package:doctorapp/screens/signup_screen.dart';
 import 'package:flutter/material.dart';
-import 'package:blobs/blobs.dart';
+
 
 class OnBording1 extends StatelessWidget {
   const OnBording1({super.key});
@@ -42,8 +40,8 @@ class OnBording1 extends StatelessWidget {
                   begin: Alignment.bottomCenter,
                   end: Alignment.topCenter,
                   colors: [
-                    const Color(0xff0EBE7E).withOpacity(0.25),
-                    Colors.white.withOpacity(0.0),
+                    const Color(0xff0EBE7E).withValues(alpha:0.25),
+                    Colors.white,
                   ],
                 ),
               ),
@@ -64,7 +62,7 @@ class OnBording1 extends StatelessWidget {
                     ),
                     boxShadow: [
                       BoxShadow(
-                        color: Colors.black.withOpacity(0.08),
+                        color: Colors.black.withValues(alpha:  0.08),
                         blurRadius: 20,
                         offset: const Offset(0, 12),
                       ),

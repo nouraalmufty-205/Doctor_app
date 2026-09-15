@@ -1,6 +1,5 @@
 import 'package:doctorapp/core/confimation_screen.dart';
 import 'package:doctorapp/screens/location_service_screen.dart/location_service.dart';
-import 'package:doctorapp/screens/main_diagonstic_screen/main_diagonstic_screen.dart';
 import 'package:flutter/material.dart';
 
 class PatientDetialsScreen extends StatelessWidget {
