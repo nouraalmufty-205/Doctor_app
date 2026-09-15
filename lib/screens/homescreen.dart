@@ -1,3 +1,4 @@
+import 'package:doctorapp/screens/livescreen.dart';
 import 'package:doctorapp/widgets/categories.dart';
 import 'package:doctorapp/widgets/featuredoctor.dart';
 import 'package:doctorapp/widgets/homeappbar.dart';
@@ -18,79 +19,84 @@ class _HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffFFFFFF),
-      body: Container(
-        decoration: const BoxDecoration(
-          image: DecorationImage(
-            image: AssetImage("assets/My_doctors_screen.png"),
-            fit: BoxFit.cover,
+      body: InkWell(
+              onTap: () {
+        Navigator.push(context, MaterialPageRoute(builder: (_)=>LiveScreen()));
+      },
+        child: Container(
+          decoration: const BoxDecoration(
+            image: DecorationImage(
+              image: AssetImage("assets/My_doctors_screen.png"),
+              fit: BoxFit.cover,
+            ),
           ),
-        ),
-        child: SingleChildScrollView(
-          child: Column(
-            children: [
-              Stack(
-                children: [
-                  CustomAppBar(),
-                  SizedBox(height: 20),
-                  Positioned(
-                    left: 24,
-                    right: 24,
-                    bottom: 0,
-                    child: SearchBar(
-                      elevation: WidgetStateProperty.all(4.0),
-                      backgroundColor: WidgetStateProperty.all(Colors.white),
-                      shape: WidgetStateProperty.all(
-                        RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(12),
+          child: SingleChildScrollView(
+            child: Column(
+              children: [
+                Stack(
+                  children: [
+                    CustomAppBar(),
+                    SizedBox(height: 20),
+                    Positioned(
+                      left: 24,
+                      right: 24,
+                      bottom: 0,
+                      child: SearchBar(
+                        elevation: WidgetStateProperty.all(4.0),
+                        backgroundColor: WidgetStateProperty.all(Colors.white),
+                        shape: WidgetStateProperty.all(
+                          RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(12),
+                          ),
                         ),
-                      ),
-                      hintText: "Search....",
-                      hintStyle: WidgetStateProperty.all(
-                        TextStyle(color: Color(0xff677294), fontSize: 15),
-                      ),
-                      leading: Padding(
-                        padding: const EdgeInsets.only(left: 20),
-                        child: Icon(
-                          Icons.search,
-                          size: 24,
-                          color: Color(0xff677294),
+                        hintText: "Search....",
+                        hintStyle: WidgetStateProperty.all(
+                          TextStyle(color: Color(0xff677294), fontSize: 15),
                         ),
-                      ),
-                      trailing: [
-                        IconButton(icon: Icon(Icons.close), onPressed: () {}),
-                      ],
-                    ),
-                  ),
-                ],
-              ),
-              const SizedBox(height: 30),
-              Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  Padding(
-                    padding: const EdgeInsets.symmetric(horizontal: 20),
-                    child: Text(
-                      "Live Doctors",
-                      style: TextStyle(
-                        fontSize: 18,
-                        fontWeight: FontWeight.w800,
-                        color: Color(0xff333333),
+                        leading: Padding(
+                          padding: const EdgeInsets.only(left: 20),
+                          child: Icon(
+                            Icons.search,
+                            size: 24,
+                            color: Color(0xff677294),
+                          ),
+                        ),
+                        trailing: [
+                          IconButton(icon: Icon(Icons.close), onPressed: () {}),
+                        ],
                       ),
                     ),
-                  ),
-                  LiveDoctors(),
-                  SizedBox(height: 20),
-                  Categories(),
-                ],
-              ),
-              SizedBox(height: 10),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 20),
-                child: PopularDoctors(doctors: homePopularDoctors),
-              ),
-              const SizedBox(height: 20),
-              FeatureDoctor(),
-            ],
+                  ],
+                ),
+                const SizedBox(height: 30),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                      child: Text(
+                        "Live Doctors",
+                        style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w800,
+                          color: Color(0xff333333),
+                        ),
+                      ),
+                    ),
+                    LiveDoctors(),
+                    SizedBox(height: 20),
+                    Categories(),
+                  ],
+                ),
+                SizedBox(height: 10),
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: PopularDoctors(doctors: homePopularDoctors),
+                ),
+                const SizedBox(height: 20),
+                FeatureDoctor(),
+              ],
+            ),
           ),
         ),
       ),
